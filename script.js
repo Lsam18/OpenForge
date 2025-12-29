@@ -167,6 +167,7 @@ document.querySelectorAll('.btn').forEach(btn => {
     const form = document.getElementById('demoForm');
     if (!form) return;
 
+    const serviceTypeEl = document.getElementById('serviceType');
     const shopTypeEl = document.getElementById('shopType');
     const waNumberEl = document.getElementById('waNumber');
     const itemCountEl = document.getElementById('itemCount');
@@ -174,41 +175,123 @@ document.querySelectorAll('.btn').forEach(btn => {
     const waMessageEl = document.getElementById('waMessage');
     const demoErrorEl = document.getElementById('demoError');
 
+    const webStatusEl = document.getElementById('webStatus');
+    const webBusinessEl = document.getElementById('webBusiness');
+    const securityFocusEl = document.getElementById('securityFocus');
+    const securityEnvEl = document.getElementById('securityEnv');
+
+    const serviceGroups = Array.from(form.querySelectorAll('.demo-group[data-service]'));
+
     function setError(message) {
         if (!demoErrorEl) return;
         demoErrorEl.textContent = message || '';
         demoErrorEl.style.display = message ? 'block' : 'none';
     }
 
-    function buildDemoScript({ shopType, itemCount, painToday, contactNumber, extraMessage }) {
-        const lines = [
-            'OpenForge Demo Request',
-            '',
-            'What kind of shop is this?',
-            `- ${shopType}`,
-            '',
-            'How many items roughly?',
-            `- ${itemCount}`,
-            '',
-            'Any pain today?',
-            `- ${painToday}`,
-            contactNumber ? '' : null,
-            contactNumber ? 'Contact number (optional):' : null,
-            contactNumber ? `- ${contactNumber}` : null,
-            '',
-            'Show 2 screenshots max:',
-            '- Stock',
-            '- Invoice',
-        ];
+    function setFieldRequired(el, isRequired) {
+        if (!el) return;
+        if (isRequired) {
+            el.setAttribute('required', '');
+            el.removeAttribute('disabled');
+        } else {
+            el.removeAttribute('required');
+            el.setAttribute('disabled', '');
+        }
+    }
 
-        if (extraMessage) {
-            lines.push('', 'Extra notes:', `- ${extraMessage}`);
+    function setService(service) {
+        const nextService = (service || '').trim();
+
+        serviceGroups.forEach(group => {
+            const isActive = group.getAttribute('data-service') === nextService;
+            group.classList.toggle('is-active', isActive);
+
+            // Disable inputs inside inactive groups so they don't block validation.
+            const groupInputs = Array.from(group.querySelectorAll('input, select, textarea'));
+            groupInputs.forEach(input => {
+                input.disabled = !isActive;
+            });
+        });
+
+        // Required rules per service
+        setFieldRequired(shopTypeEl, nextService === 'pos');
+        setFieldRequired(itemCountEl, nextService === 'pos');
+        setFieldRequired(painTodayEl, nextService === 'pos');
+
+        setFieldRequired(webStatusEl, nextService === 'web');
+        setFieldRequired(securityFocusEl, nextService === 'security');
+
+        // Optional fields (kept enabled when group active)
+        if (nextService === 'web') {
+            if (webBusinessEl) webBusinessEl.disabled = false;
+        }
+        if (nextService === 'security') {
+            if (securityEnvEl) securityEnvEl.disabled = false;
         }
 
-        lines.push(
+        setError('');
+    }
+
+    function buildRequestBody({
+        serviceType,
+        shopType,
+        itemCount,
+        painToday,
+        webStatus,
+        webBusiness,
+        securityFocus,
+        securityEnv,
+        contactNumber,
+        extraMessage,
+    }) {
+        const lines = [
+            'OpenForge Request',
             '',
-            'I can set this up exactly like your shop. One-time setup, no lock-in.'
-        );
+            'Service:',
+            `- ${serviceType || 'N/A'}`,
+        ];
+
+        if (serviceType === 'pos') {
+            lines.push(
+                '',
+                'POS details:',
+                `- Shop type: ${shopType || 'N/A'}`,
+                `- Items (roughly): ${itemCount || 'N/A'}`,
+                `- Biggest pain today: ${painToday || 'N/A'}`,
+                '',
+                'Suggested screenshots (2 max):',
+                '- Stock',
+                '- Invoice'
+            );
+        }
+
+        if (serviceType === 'web') {
+            lines.push(
+                '',
+                'Website details:',
+                `- Status: ${webStatus || 'N/A'}`,
+                webBusiness ? `- Business type: ${webBusiness}` : null
+            );
+        }
+
+        if (serviceType === 'security') {
+            lines.push(
+                '',
+                'Security details:',
+                `- Focus: ${securityFocus || 'N/A'}`,
+                securityEnv ? `- Environment: ${securityEnv}` : null
+            );
+        }
+
+        if (contactNumber) {
+            lines.push('', 'Contact number (optional):', `- ${contactNumber}`);
+        }
+
+        if (extraMessage) {
+            lines.push('', 'Message:', `- ${extraMessage}`);
+        }
+
+        lines.push('', 'Please share timeline + a rough quote range.');
 
         return lines.filter(Boolean).join('\n');
     }
@@ -219,46 +302,94 @@ document.querySelectorAll('.btn').forEach(btn => {
         window.location.href = url;
     }
 
+    if (serviceTypeEl) {
+        serviceTypeEl.addEventListener('change', () => {
+            setService(serviceTypeEl.value);
+        });
+    }
+
+    // Initialize state
+    setService(serviceTypeEl?.value || '');
+
     form.addEventListener('submit', (e) => {
         e.preventDefault();
 
-        const shopType = (shopTypeEl?.value || '').trim();
+        const serviceType = (serviceTypeEl?.value || '').trim();
         const contactNumber = (waNumberEl?.value || '').trim();
-        const itemCount = (itemCountEl?.value || '').trim();
-        const painToday = (painTodayEl?.value || '').trim();
         const message = (waMessageEl?.value || '').trim();
 
-        if (!shopType) {
-            setError('Please select your shop type.');
-            shopTypeEl?.focus();
+
+        if (!serviceType) {
+            setError('Please select what you need.');
+            serviceTypeEl?.focus();
             return;
         }
 
-        if (!itemCount || Number(itemCount) <= 0) {
-            setError('Please enter how many items you have (roughly).');
-            itemCountEl?.focus();
-            return;
+        const shopType = (shopTypeEl?.value || '').trim();
+        const itemCount = (itemCountEl?.value || '').trim();
+        const painToday = (painTodayEl?.value || '').trim();
+        const webStatus = (webStatusEl?.value || '').trim();
+        const webBusiness = (webBusinessEl?.value || '').trim();
+        const securityFocus = (securityFocusEl?.value || '').trim();
+        const securityEnv = (securityEnvEl?.value || '').trim();
+
+        if (serviceType === 'pos') {
+            if (!shopType) {
+                setError('Please select your shop type.');
+                shopTypeEl?.focus();
+                return;
+            }
+
+            if (!itemCount || Number(itemCount) <= 0) {
+                setError('Please enter how many items you have (roughly).');
+                itemCountEl?.focus();
+                return;
+            }
+
+            if (!painToday) {
+                setError('Please select your biggest pain today.');
+                painTodayEl?.focus();
+                return;
+            }
         }
 
-        if (!painToday) {
-            setError('Please select your biggest pain today.');
-            painTodayEl?.focus();
-            return;
+        if (serviceType === 'web') {
+            if (!webStatus) {
+                setError('Please select whether you already have a website.');
+                webStatusEl?.focus();
+                return;
+            }
+        }
+
+        if (serviceType === 'security') {
+            if (!securityFocus) {
+                setError('Please select a security focus.');
+                securityFocusEl?.focus();
+                return;
+            }
         }
 
         setError('');
 
-        const body = buildDemoScript({
+        const serviceLabel =
+            serviceType === 'pos' ? 'POS Demo' :
+            serviceType === 'web' ? 'Web Quote' :
+            serviceType === 'security' ? 'Security Consult' :
+            'Request';
+
+        const body = buildRequestBody({
+            serviceType,
             shopType,
             itemCount,
             painToday,
+            webStatus,
+            webBusiness,
+            securityFocus,
+            securityEnv,
             contactNumber,
-            extraMessage: message
+            extraMessage: message,
         });
 
-        openEmail({
-            subject: 'OpenForge Demo Request',
-            body
-        });
+        openEmail({ subject: `OpenForge ${serviceLabel} Request`, body });
     });
 })();

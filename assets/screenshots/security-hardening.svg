@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" role="img" aria-label="Security hardening illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#000000"/>
+      <stop offset="0.55" stop-color="#0d0d0d"/>
+      <stop offset="1" stop-color="#070707"/>
+    </linearGradient>
+    <radialGradient id="g1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(520 260) rotate(25) scale(760 520)">
+      <stop offset="0" stop-color="#8b5cf6" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1120 320) rotate(15) scale(780 540)">
+      <stop offset="0" stop-color="#f43f5e" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#f43f5e" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="stroke" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8b5cf6" stop-opacity="0.50"/>
+      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#f43f5e" stop-opacity="0.42"/>
+    </linearGradient>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="12"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <rect width="1600" height="1000" fill="url(#g1)"/>
+  <rect width="1600" height="1000" fill="url(#g2)"/>
+
+  <!-- Panel -->
+  <g transform="translate(260 180)">
+    <rect x="0" y="0" width="1080" height="640" rx="28" fill="#0d0d0d" stroke="url(#stroke)" stroke-opacity="0.55"/>
+    <rect x="0" y="0" width="1080" height="78" rx="28" fill="#121212"/>
+    <rect x="0" y="52" width="1080" height="1" fill="#ffffff" fill-opacity="0.08"/>
+    <circle cx="44" cy="39" r="10" fill="#ec4899"/>
+    <circle cx="78" cy="39" r="10" fill="#f59e0b"/>
+    <circle cx="112" cy="39" r="10" fill="#10b981"/>
+
+    <!-- Left: controls list -->
+    <g transform="translate(70 140)">
+      <text x="0" y="0" fill="#f1f5f9" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto" font-size="34" font-weight="900">Hardening checklist</text>
+      <text x="0" y="40" fill="#94a3b8" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto" font-size="18" font-weight="650">Simple fundamentals. Big risk reduction.</text>
+
+      <g transform="translate(0 90)">
+        <rect x="0" y="0" width="470" height="64" rx="18" fill="#000000" fill-opacity="0.24" stroke="#ffffff" stroke-opacity="0.10"/>
+        <circle cx="32" cy="32" r="12" fill="#10b981" fill-opacity="0.20"/>
+        <path d="M26 32l4 4 9-11" stroke="#10b981" stroke-opacity="0.65" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="62" y="22" width="280" height="12" rx="6" fill="#f1f5f9" fill-opacity="0.14"/>
+        <rect x="62" y="40" width="220" height="10" rx="5" fill="#94a3b8" fill-opacity="0.16"/>
+
+        <rect x="0" y="84" width="470" height="64" rx="18" fill="#000000" fill-opacity="0.24" stroke="#ffffff" stroke-opacity="0.10"/>
+        <circle cx="32" cy="116" r="12" fill="#10b981" fill-opacity="0.20"/>
+        <path d="M26 116l4 4 9-11" stroke="#10b981" stroke-opacity="0.65" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="62" y="106" width="300" height="12" rx="6" fill="#f1f5f9" fill-opacity="0.14"/>
+        <rect x="62" y="124" width="240" height="10" rx="5" fill="#94a3b8" fill-opacity="0.16"/>
+
+        <rect x="0" y="168" width="470" height="64" rx="18" fill="#000000" fill-opacity="0.24" stroke="#ffffff" stroke-opacity="0.10"/>
+        <circle cx="32" cy="200" r="12" fill="#f43f5e" fill-opacity="0.14"/>
+        <path d="M32 192v14" stroke="#f43f5e" stroke-opacity="0.55" stroke-width="4" stroke-linecap="round"/>
+        <circle cx="32" cy="210" r="2.8" fill="#f43f5e" fill-opacity="0.55"/>
+        <rect x="62" y="190" width="320" height="12" rx="6" fill="#f1f5f9" fill-opacity="0.12"/>
+        <rect x="62" y="208" width="210" height="10" rx="5" fill="#94a3b8" fill-opacity="0.14"/>
+      </g>
+    </g>
+
+    <!-- Right: shield + lock -->
+    <g transform="translate(710 170)">
+      <circle cx="170" cy="170" r="170" fill="#8b5cf6" fill-opacity="0.10" filter="url(#soft)"/>
+      <circle cx="210" cy="220" r="210" fill="#f43f5e" fill-opacity="0.07" filter="url(#soft)"/>
+
+      <path d="M170 40c70 40 110 40 110 40v120c0 90-58 150-110 180-52-30-110-90-110-180V80s40 0 110-40z" fill="#000000" fill-opacity="0.30" stroke="#ffffff" stroke-opacity="0.12"/>
+      <path d="M170 98c48 28 78 28 78 28v82c0 66-41 110-78 132-37-22-78-66-78-132v-82s30 0 78-28z" fill="#8b5cf6" fill-opacity="0.12" stroke="#8b5cf6" stroke-opacity="0.22"/>
+
+      <rect x="118" y="206" width="104" height="86" rx="20" fill="#121212" stroke="#ffffff" stroke-opacity="0.12"/>
+      <path d="M142 206v-16c0-16 12-28 28-28s28 12 28 28v16" stroke="#f1f5f9" stroke-opacity="0.22" stroke-width="8" stroke-linecap="round"/>
+      <circle cx="170" cy="246" r="10" fill="#f1f5f9" fill-opacity="0.20"/>
+      <path d="M170 256v18" stroke="#f1f5f9" stroke-opacity="0.20" stroke-width="8" stroke-linecap="round"/>
+    </g>
+  </g>
+</svg>

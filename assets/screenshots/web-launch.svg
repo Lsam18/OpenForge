@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" role="img" aria-label="Website launch preview illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#070707"/>
+      <stop offset="0.55" stop-color="#0d0d0d"/>
+      <stop offset="1" stop-color="#000000"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(500 240) rotate(35) scale(700 520)">
+      <stop offset="0" stop-color="#8b5cf6" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1180 300) rotate(25) scale(760 560)">
+      <stop offset="0" stop-color="#f43f5e" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#f43f5e" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="stroke" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8b5cf6" stop-opacity="0.55"/>
+      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#f43f5e" stop-opacity="0.50"/>
+    </linearGradient>
+    <linearGradient id="btn" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8b5cf6"/>
+      <stop offset="1" stop-color="#f43f5e"/>
+    </linearGradient>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <rect width="1600" height="1000" fill="url(#glow1)"/>
+  <rect width="1600" height="1000" fill="url(#glow2)"/>
+
+  <!-- Subtle grid -->
+  <g opacity="0.18">
+    <path d="M120 140H1480" stroke="#ffffff" stroke-opacity="0.12"/>
+    <path d="M120 240H1480" stroke="#ffffff" stroke-opacity="0.10"/>
+    <path d="M120 340H1480" stroke="#ffffff" stroke-opacity="0.08"/>
+    <path d="M120 440H1480" stroke="#ffffff" stroke-opacity="0.06"/>
+    <path d="M120 540H1480" stroke="#ffffff" stroke-opacity="0.06"/>
+    <path d="M120 640H1480" stroke="#ffffff" stroke-opacity="0.06"/>
+    <path d="M120 740H1480" stroke="#ffffff" stroke-opacity="0.06"/>
+    <path d="M120 840H1480" stroke="#ffffff" stroke-opacity="0.06"/>
+
+    <path d="M240 120V900" stroke="#ffffff" stroke-opacity="0.05"/>
+    <path d="M400 120V900" stroke="#ffffff" stroke-opacity="0.05"/>
+    <path d="M560 120V900" stroke="#ffffff" stroke-opacity="0.05"/>
+    <path d="M720 120V900" stroke="#ffffff" stroke-opacity="0.05"/>
+    <path d="M880 120V900" stroke="#ffffff" stroke-opacity="0.05"/>
+    <path d="M1040 120V900" stroke="#ffffff" stroke-opacity="0.05"/>
+    <path d="M1200 120V900" stroke="#ffffff" stroke-opacity="0.05"/>
+    <path d="M1360 120V900" stroke="#ffffff" stroke-opacity="0.05"/>
+  </g>
+
+  <!-- Browser window -->
+  <g transform="translate(250 180)">
+    <rect x="0" y="0" width="1100" height="640" rx="26" fill="#0d0d0d" stroke="url(#stroke)" stroke-opacity="0.55"/>
+    <rect x="0" y="0" width="1100" height="78" rx="26" fill="#121212"/>
+    <rect x="0" y="52" width="1100" height="1" fill="#ffffff" fill-opacity="0.08"/>
+
+    <circle cx="44" cy="39" r="10" fill="#ec4899"/>
+    <circle cx="78" cy="39" r="10" fill="#f59e0b"/>
+    <circle cx="112" cy="39" r="10" fill="#10b981"/>
+
+    <rect x="170" y="24" width="680" height="30" rx="12" fill="#000000" fill-opacity="0.35" stroke="#ffffff" stroke-opacity="0.10"/>
+    <text x="190" y="45" fill="#94a3b8" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto" font-size="16" font-weight="650">https://yourbusiness.lk</text>
+
+    <!-- Hero area -->
+    <g transform="translate(70 130)">
+      <text x="0" y="0" fill="#f1f5f9" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto" font-size="42" font-weight="900">Launch a website</text>
+      <text x="0" y="44" fill="#94a3b8" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto" font-size="20" font-weight="650">Clear offer. Fast load. Mobile-first.</text>
+      <rect x="0" y="84" width="220" height="48" rx="16" fill="url(#btn)"/>
+      <text x="24" y="115" fill="#070707" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto" font-size="18" font-weight="900">Get in touch</text>
+
+      <rect x="0" y="170" width="470" height="16" rx="8" fill="#ffffff" fill-opacity="0.10"/>
+      <rect x="0" y="200" width="420" height="16" rx="8" fill="#ffffff" fill-opacity="0.08"/>
+      <rect x="0" y="230" width="390" height="16" rx="8" fill="#ffffff" fill-opacity="0.06"/>
+
+      <!-- Feature cards -->
+      <g transform="translate(0 300)">
+        <rect x="0" y="0" width="300" height="170" rx="18" fill="#000000" fill-opacity="0.26" stroke="#ffffff" stroke-opacity="0.10"/>
+        <rect x="20" y="24" width="130" height="12" rx="6" fill="#f1f5f9" fill-opacity="0.16"/>
+        <rect x="20" y="56" width="240" height="10" rx="5" fill="#94a3b8" fill-opacity="0.22"/>
+        <rect x="20" y="78" width="210" height="10" rx="5" fill="#94a3b8" fill-opacity="0.16"/>
+        <rect x="20" y="120" width="140" height="36" rx="14" fill="#8b5cf6" fill-opacity="0.18" stroke="#8b5cf6" stroke-opacity="0.28"/>
+      </g>
+
+      <g transform="translate(330 300)">
+        <rect x="0" y="0" width="300" height="170" rx="18" fill="#000000" fill-opacity="0.26" stroke="#ffffff" stroke-opacity="0.10"/>
+        <rect x="20" y="24" width="160" height="12" rx="6" fill="#f1f5f9" fill-opacity="0.16"/>
+        <rect x="20" y="56" width="240" height="10" rx="5" fill="#94a3b8" fill-opacity="0.22"/>
+        <rect x="20" y="78" width="220" height="10" rx="5" fill="#94a3b8" fill-opacity="0.16"/>
+        <rect x="20" y="120" width="160" height="36" rx="14" fill="#f43f5e" fill-opacity="0.14" stroke="#f43f5e" stroke-opacity="0.26"/>
+      </g>
+
+      <g transform="translate(660 300)">
+        <rect x="0" y="0" width="300" height="170" rx="18" fill="#000000" fill-opacity="0.26" stroke="#ffffff" stroke-opacity="0.10"/>
+        <rect x="20" y="24" width="150" height="12" rx="6" fill="#f1f5f9" fill-opacity="0.16"/>
+        <rect x="20" y="56" width="240" height="10" rx="5" fill="#94a3b8" fill-opacity="0.22"/>
+        <rect x="20" y="78" width="200" height="10" rx="5" fill="#94a3b8" fill-opacity="0.16"/>
+        <rect x="20" y="120" width="120" height="36" rx="14" fill="#10b981" fill-opacity="0.12" stroke="#10b981" stroke-opacity="0.22"/>
+      </g>
+    </g>
+
+    <!-- Decorative orb -->
+    <circle cx="940" cy="180" r="80" fill="#8b5cf6" fill-opacity="0.16" filter="url(#soft)"/>
+    <circle cx="980" cy="240" r="96" fill="#f43f5e" fill-opacity="0.12" filter="url(#soft)"/>
+  </g>
+</svg>
