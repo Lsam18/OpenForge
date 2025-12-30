@@ -167,6 +167,8 @@ document.querySelectorAll('.btn').forEach(btn => {
     const form = document.getElementById('demoForm');
     if (!form) return;
 
+    const OPENFORGE_WHATSAPP_NUMBER = '94778177435';
+
     const serviceTypeEl = document.getElementById('serviceType');
     const shopTypeEl = document.getElementById('shopType');
     const waNumberEl = document.getElementById('waNumber');
@@ -174,6 +176,8 @@ document.querySelectorAll('.btn').forEach(btn => {
     const painTodayEl = document.getElementById('painToday');
     const waMessageEl = document.getElementById('waMessage');
     const demoErrorEl = document.getElementById('demoError');
+
+    const sendWhatsAppEl = document.getElementById('sendWhatsApp');
 
     const webStatusEl = document.getElementById('webStatus');
     const webBusinessEl = document.getElementById('webBusiness');
@@ -296,6 +300,92 @@ document.querySelectorAll('.btn').forEach(btn => {
         return lines.filter(Boolean).join('\n');
     }
 
+    function normalizeDigits(value) {
+        return String(value || '').replace(/\D/g, '');
+    }
+
+    function openWhatsApp({ number, text }) {
+        const digits = normalizeDigits(number);
+        const baseUrl = `https://wa.me/${digits}`;
+        const url = text ? `${baseUrl}?text=${encodeURIComponent(text)}` : baseUrl;
+
+        const newWindow = window.open(url, '_blank', 'noopener');
+        if (!newWindow) {
+            window.location.href = url;
+        }
+    }
+
+    function collectAndValidate() {
+        const serviceType = (serviceTypeEl?.value || '').trim();
+        const contactNumber = (waNumberEl?.value || '').trim();
+        const message = (waMessageEl?.value || '').trim();
+
+        if (!serviceType) {
+            setError('Please select what you need.');
+            serviceTypeEl?.focus();
+            return null;
+        }
+
+        const shopType = (shopTypeEl?.value || '').trim();
+        const itemCount = (itemCountEl?.value || '').trim();
+        const painToday = (painTodayEl?.value || '').trim();
+        const webStatus = (webStatusEl?.value || '').trim();
+        const webBusiness = (webBusinessEl?.value || '').trim();
+        const securityFocus = (securityFocusEl?.value || '').trim();
+        const securityEnv = (securityEnvEl?.value || '').trim();
+
+        if (serviceType === 'pos') {
+            if (!shopType) {
+                setError('Please select your shop type.');
+                shopTypeEl?.focus();
+                return null;
+            }
+
+            if (!itemCount || Number(itemCount) <= 0) {
+                setError('Please enter how many items you have (roughly).');
+                itemCountEl?.focus();
+                return null;
+            }
+
+            if (!painToday) {
+                setError('Please select your biggest pain today.');
+                painTodayEl?.focus();
+                return null;
+            }
+        }
+
+        if (serviceType === 'web') {
+            if (!webStatus) {
+                setError('Please select whether you already have a website.');
+                webStatusEl?.focus();
+                return null;
+            }
+        }
+
+        if (serviceType === 'security') {
+            if (!securityFocus) {
+                setError('Please select a security focus.');
+                securityFocusEl?.focus();
+                return null;
+            }
+        }
+
+        setError('');
+
+        return {
+            serviceType,
+            shopType,
+            itemCount,
+            painToday,
+            webStatus,
+            webBusiness,
+            securityFocus,
+            securityEnv,
+            contactNumber,
+            message,
+        };
+    }
+
     function openEmail({ subject, body }) {
         const to = 'lakshan.sam28@gmail.com';
         const url = `mailto:${encodeURIComponent(to)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
@@ -311,83 +401,54 @@ document.querySelectorAll('.btn').forEach(btn => {
     // Initialize state
     setService(serviceTypeEl?.value || '');
 
+    if (sendWhatsAppEl) {
+        sendWhatsAppEl.setAttribute('href', `https://wa.me/${OPENFORGE_WHATSAPP_NUMBER}`);
+        sendWhatsAppEl.addEventListener('click', (e) => {
+            e.preventDefault();
+
+            const payload = collectAndValidate();
+            if (!payload) return;
+
+            const body = buildRequestBody({
+                serviceType: payload.serviceType,
+                shopType: payload.shopType,
+                itemCount: payload.itemCount,
+                painToday: payload.painToday,
+                webStatus: payload.webStatus,
+                webBusiness: payload.webBusiness,
+                securityFocus: payload.securityFocus,
+                securityEnv: payload.securityEnv,
+                contactNumber: payload.contactNumber,
+                extraMessage: payload.message,
+            });
+
+            openWhatsApp({ number: OPENFORGE_WHATSAPP_NUMBER, text: body });
+        });
+    }
+
     form.addEventListener('submit', (e) => {
         e.preventDefault();
 
-        const serviceType = (serviceTypeEl?.value || '').trim();
-        const contactNumber = (waNumberEl?.value || '').trim();
-        const message = (waMessageEl?.value || '').trim();
-
-
-        if (!serviceType) {
-            setError('Please select what you need.');
-            serviceTypeEl?.focus();
-            return;
-        }
-
-        const shopType = (shopTypeEl?.value || '').trim();
-        const itemCount = (itemCountEl?.value || '').trim();
-        const painToday = (painTodayEl?.value || '').trim();
-        const webStatus = (webStatusEl?.value || '').trim();
-        const webBusiness = (webBusinessEl?.value || '').trim();
-        const securityFocus = (securityFocusEl?.value || '').trim();
-        const securityEnv = (securityEnvEl?.value || '').trim();
-
-        if (serviceType === 'pos') {
-            if (!shopType) {
-                setError('Please select your shop type.');
-                shopTypeEl?.focus();
-                return;
-            }
-
-            if (!itemCount || Number(itemCount) <= 0) {
-                setError('Please enter how many items you have (roughly).');
-                itemCountEl?.focus();
-                return;
-            }
-
-            if (!painToday) {
-                setError('Please select your biggest pain today.');
-                painTodayEl?.focus();
-                return;
-            }
-        }
-
-        if (serviceType === 'web') {
-            if (!webStatus) {
-                setError('Please select whether you already have a website.');
-                webStatusEl?.focus();
-                return;
-            }
-        }
-
-        if (serviceType === 'security') {
-            if (!securityFocus) {
-                setError('Please select a security focus.');
-                securityFocusEl?.focus();
-                return;
-            }
-        }
-
-        setError('');
+        const payload = collectAndValidate();
+        if (!payload) return;
 
         const serviceLabel =
-            serviceType === 'pos' ? 'POS Demo' :
-            serviceType === 'web' ? 'Web Quote' :
-            serviceType === 'security' ? 'Security Consult' :
+            payload.serviceType === 'pos' ? 'POS Demo' :
+            payload.serviceType === 'web' ? 'Web Quote' :
+            payload.serviceType === 'security' ? 'Security Consult' :
             'Request';
 
         const body = buildRequestBody({
-            serviceType,
-            shopType,
-            itemCount,
-            painToday,
-            webStatus,
-            webBusiness,
-            securityFocus,
-            securityEnv,
-            contactNumber,
-            extraMessage: message,
+            serviceType: payload.serviceType,
+            shopType: payload.shopType,
+            itemCount: payload.itemCount,
+            painToday: payload.painToday,
+            webStatus: payload.webStatus,
+            webBusiness: payload.webBusiness,
+            securityFocus: payload.securityFocus,
+            securityEnv: payload.securityEnv,
+            contactNumber: payload.contactNumber,
+            extraMessage: payload.message,
         });
 
         openEmail({ subject: `OpenForge ${serviceLabel} Request`, body });

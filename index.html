@@ -934,7 +934,7 @@
                 </details>
                 <details class="faq-item">
                     <summary>How does support work?</summary>
-                    <div class="faq-answer"><p>Email for now. Dedicated channels (WhatsApp) are coming soon. Optional monthly support available.</p></div>
+                    <div class="faq-answer"><p>Email or WhatsApp. Optional monthly support available.</p></div>
                 </details>
             </div>
         </div>
@@ -1034,7 +1034,7 @@
 
                     <label class="demo-field">
                         <span>Contact number (optional)</span>
-                        <input id="waNumber" type="tel" inputmode="tel" placeholder="Optional (WhatsApp support coming soon)">
+                        <input id="waNumber" type="tel" inputmode="tel" placeholder="Optional (for call-back)">
                     </label>
 
                     <label class="demo-field">
@@ -1042,8 +1042,11 @@
                         <textarea id="waMessage" rows="4" placeholder="Share anything important (timeline, pages/features, current pain, etc.)."></textarea>
                     </label>
 
-                    <button class="btn btn-primary" type="submit">Send Email</button>
-                    <div class="demo-hint">WhatsApp support is coming soon.</div>
+                    <div class="contact-actions">
+                        <button class="btn btn-primary" type="submit">Send Email</button>
+                        <a class="btn btn-outline" id="sendWhatsApp" href="https://wa.me/94778177435" target="_blank" rel="noopener">Send WhatsApp</a>
+                    </div>
+                    <div class="demo-hint">Prefer WhatsApp? Use “Send WhatsApp”.</div>
                     <div class="demo-error" id="demoError" aria-live="polite"></div>
                     <div class="demo-alt">
                         <div class="demo-disclaimer">
@@ -1070,21 +1073,45 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
+            <div class="footer-top">
                 <div class="footer-brand">
                     <img src="Logo.png" alt="OpenForge" class="footer-logo">
-                    <p>Enterprise software built for reliability.</p>
+                    <p>Reliable systems, clean websites, secure foundations.</p>
+                    <div class="footer-ctas" aria-label="Contact links">
+                        <a class="footer-pill" href="https://wa.me/94778177435" target="_blank" rel="noopener">WhatsApp</a>
+                        <a class="footer-pill" href="mailto:lakshan.sam28@gmail.com?subject=OpenForge%20Demo%20Request">Email</a>
+                    </div>
                 </div>
-                <div class="footer-links">
-                    <a href="#product">Product</a>
-                    <a href="#features">Features</a>
-                    <a href="#gallery">Screenshots</a>
-                    <a href="#pricing">Pricing</a>
-                    <a href="#web-pricing">Web Pricing</a>
-                    <a href="#stack">Tech Stack</a>
-                    <a href="#roadmap">Roadmap</a>
-                    <a href="#demo">Request a Demo</a>
-                    <a href="https://www.google.com/business/" target="_blank" rel="noopener">Google Business Profile</a>
+
+                <div class="footer-columns" aria-label="Footer navigation">
+                    <div class="footer-col">
+                        <div class="footer-col-title">Explore</div>
+                        <div class="footer-col-links">
+                            <a href="#product">Product</a>
+                            <a href="#features">Features</a>
+                            <a href="#gallery">Screenshots</a>
+                            <a href="#stack">Tech Stack</a>
+                            <a href="#roadmap">Roadmap</a>
+                        </div>
+                    </div>
+
+                    <div class="footer-col">
+                        <div class="footer-col-title">Pricing</div>
+                        <div class="footer-col-links">
+                            <a href="#pricing">POS Pricing</a>
+                            <a href="#web-pricing">Website Pricing</a>
+                            <a href="#faq">FAQ</a>
+                        </div>
+                    </div>
+
+                    <div class="footer-col">
+                        <div class="footer-col-title">Contact</div>
+                        <div class="footer-col-links">
+                            <a href="#demo">Request a Demo</a>
+                            <a href="https://wa.me/94778177435" target="_blank" rel="noopener">+94 77 81 77 435</a>
+                            <a href="mailto:lakshan.sam28@gmail.com?subject=OpenForge%20Demo%20Request">lakshan.sam28@gmail.com</a>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
