@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="OpenForge POS — offline-first billing, real-time inventory, and reliable reporting for retail businesses.">
+    <meta property="og:title" content="OpenForge POS">
+    <meta property="og:description" content="Offline-first billing, real-time stock, and reliable reporting.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/og.svg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="OpenForge POS">
+    <meta name="twitter:description" content="Offline-first billing, real-time stock, and reliable reporting.">
+    <meta name="twitter:image" content="assets/og.svg">
+
+    <link rel="icon" type="image/png" href="Logo.png">
+    <link rel="apple-touch-icon" href="Logo.png">
+
+    <!-- Google Analytics (replace G-XXXXXXXXXX with your Measurement ID) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);} 
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
+    <title>OpenForge POS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <a href="index.html" class="logo">
+                    <img src="Logo.png" alt="OpenForge">
+                </a>
+                <button class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="pos.html">POS</a></li>
+                    <li><a href="web.html">Web</a></li>
+                    <li><a href="security.html">Security</a></li>
+                    <li><a href="contact.html" class="nav-cta">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="assets/screenshots/stock.svg" aria-hidden="true">
+            <source src="assets/hero.mp4?v=20251225-premium" type="video/mp4">
+        </video>
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <img class="hero-logo" src="Logo.png" alt="OpenForge" decoding="async" fetchpriority="high">
+                    <div class="hero-pills" aria-label="Page">
+                        <span class="hero-pill">OpenForge POS</span>
+                        <span class="hero-pill">Offline-first</span>
+                        <span class="hero-pill">Fast billing</span>
+                    </div>
+                    <h1 class="hero-heading">
+                        <span class="hero-line hero-line-1">POS built for speed.</span>
+                        <span class="hero-line hero-line-2">Stock you can trust.</span>
+                        <span class="hero-line hero-line-3">Reports that stay accurate.</span>
+                    </h1>
+                    <p class="hero-text">Designed for counter speed and daily reliability — even when internet is down.</p>
+                    <ul class="hero-highlights" aria-label="Key highlights">
+                        <li>Offline-first operations</li>
+                        <li>Real-time inventory</li>
+                        <li>Backup-safe data</li>
+                    </ul>
+                    <div class="hero-actions">
+                        <a href="contact.html" class="btn btn-primary">Request demo</a>
+                        <a href="#pricing" class="btn btn-outline">View pricing</a>
+                    </div>
+                </div>
+
+                <div class="hero-media" aria-hidden="true">
+                    <div class="hero-showcase">
+                        <div class="showcase-surface">
+                            <div class="showcase-main">
+                                <div class="showcase-badge-row">OpenForge POS</div>
+                                <div class="showcase-frame">
+                                    <img src="assets/screenshots/stock.svg" alt="" loading="lazy" decoding="async">
+                                </div>
+                            </div>
+                            <div class="showcase-strip">
+                                <div class="showcase-mini">
+                                    <div class="showcase-mini-badge">Billing</div>
+                                    <img src="assets/screenshots/billing.svg" alt="" loading="lazy" decoding="async">
+                                </div>
+                                <div class="showcase-mini">
+                                    <div class="showcase-mini-badge">Reports</div>
+                                    <img src="assets/screenshots/reports.svg" alt="" loading="lazy" decoding="async">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="showcase-kpis">
+                            <div class="showcase-kpi"><strong>Offline-first</strong><span>Internet optional for daily ops.</span></div>
+                            <div class="showcase-kpi"><strong>Fast billing</strong><span>Optimized for counter speed.</span></div>
+                            <div class="showcase-kpi"><strong>Reliable data</strong><span>Backup-safe, audit-friendly.</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why People Switch -->
+    <section class="switch-section" aria-label="Why people switch">
+        <div class="container">
+            <div class="switch-grid">
+                <div class="switch-col switch-pain">
+                    <h2 class="switch-title">Still running billing manually?</h2>
+                    <ul class="switch-list">
+                        <li>Handwritten bills</li>
+                        <li>Stock tracked in notebooks or Excel</li>
+                        <li>No clear daily / monthly sales</li>
+                        <li>No idea what’s actually making profit</li>
+                    </ul>
+                </div>
+
+                <div class="switch-col switch-relief">
+                    <h2 class="switch-title">OpenForge replaces guesswork with a system.</h2>
+                    <ul class="switch-list">
+                        <li>One-click billing</li>
+                        <li>Live stock visibility</li>
+                        <li>Daily & monthly summaries</li>
+                        <li>Backup-safe data</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="switch-note">People don’t buy POS. They buy escape from pain.</p>
+        </div>
+    </section>
+
+    <!-- Product Overview -->
+    <section id="product" class="product-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">OpenForge POS</span>
+                <h2 class="section-heading">Point of Sale Built for Performance</h2>
+                <p class="section-text">Offline-first architecture. Real-time inventory. Zero compromises.</p>
+            </div>
+
+            <div class="product-grid">
+                <div class="product-visual">
+                    <div class="product-window">
+                        <div class="window-header">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <img src="assets/screenshots/stock.svg" alt="OpenForge POS interface preview">
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Designed for Speed</h3>
+                    <p class="product-description">Every millisecond matters at the counter. OpenForge POS is optimized for instant transactions, real-time stock updates, and zero latency operations.</p>
+                    <ul class="product-features">
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5"/>
+                            </svg>
+                            <span>Lightning-fast billing</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5"/>
+                            </svg>
+                            <span>Offline-ready operations</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5"/>
+                            </svg>
+                            <span>Real-time inventory sync</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5"/>
+                            </svg>
+                            <span>Custom business workflows</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Device Showcase -->
+    <section class="device-showcase-section" aria-label="Device previews">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Preview</span>
+                <h2 class="section-heading">Looks Great on Any Setup</h2>
+                <p class="section-text">From office laptops to counter terminals, OpenForge is built to feel native on the hardware your team already uses.</p>
+            </div>
+
+            <div class="device-grid">
+                <div class="device-card">
+                    <div class="device-label">Laptop / Desktop</div>
+                    <div class="laptop-mockup" aria-hidden="true">
+                        <div class="laptop-screen">
+                            <div class="device-screen-inner">
+                                <img src="assets/screenshots/stock.svg" alt="OpenForge interface preview on laptop" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="laptop-base"></div>
+                    </div>
+                </div>
+
+                <div class="device-card">
+                    <div class="device-label">POS Counter</div>
+                    <div class="pos-mockup" aria-hidden="true">
+                        <div class="pos-display">
+                            <div class="pos-screen">
+                                <div class="device-screen-inner">
+                                    <img src="assets/screenshots/billing.svg" alt="OpenForge interface preview on POS" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pos-neck"></div>
+                        <div class="pos-stand"></div>
+                        <div class="pos-base"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Gallery -->
+    <section id="gallery" class="gallery-section" aria-label="Screenshots gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Screenshots</span>
+                <h2 class="section-heading">A Calm, Fast Interface</h2>
+                <p class="section-text">Switch between core workflows—no carousel, no clutter.</p>
+            </div>
+
+            <div class="gallery-card">
+                <div class="demo-preview" aria-label="Demo preview">
+                    <div class="demo-preview-bar">
+                        <div class="demo-preview-badge" title="This is a preview. Real setup is customised.">
+                            Demo mode
+                        </div>
+                        <div class="demo-preview-hint">This is a preview. Real setup is customised.</div>
+                    </div>
+                    <div class="demo-preview-stage">
+                        <img src="assets/screenshots/ss1.png" alt="OpenForge demo preview" loading="lazy">
+                        <div class="demo-preview-ui" aria-hidden="true">
+                            <div class="demo-ui-top">
+                                <div class="demo-ui-pill">Today</div>
+                                <div class="demo-ui-pill">Cash</div>
+                                <div class="demo-ui-pill">Branch 01</div>
+                                <button class="demo-ui-btn" type="button" disabled>New Invoice</button>
+                                <button class="demo-ui-btn" type="button" disabled>Export</button>
+                            </div>
+                            <div class="demo-ui-float" title="This is a preview. Real setup is customised.">
+                                Preview only
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-tabs" role="tablist" aria-label="Screenshots tabs">
+                    <button class="gallery-tab is-active" type="button" role="tab" aria-selected="true" data-gallery-tab="stock" data-src="assets/screenshots/ss1.png">Stock</button>
+                    <button class="gallery-tab" type="button" role="tab" aria-selected="false" data-gallery-tab="billing" data-src="assets/screenshots/ss3.png">Billing</button>
+                    <button class="gallery-tab" type="button" role="tab" aria-selected="false" data-gallery-tab="reports" data-src="assets/screenshots/ss2.png">Reports</button>
+                </div>
+
+                <div class="gallery-stage" aria-live="polite">
+                    <img class="gallery-image" src="assets/screenshots/ss1.png" alt="OpenForge screenshot: Stock" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases -->
+    <section id="use-cases" class="use-cases-section" aria-label="Use cases">
+        <div class="container">
+            <div class="use-cases-strip">
+                <div class="use-cases-heading">
+                    <h2 class="use-cases-title">Built for real shops</h2>
+                    <p class="use-cases-subtitle">Clients trust faster when they see themselves.</p>
+                </div>
+
+                <div class="use-cases-cards" role="list">
+                    <div class="use-case" role="listitem">
+                        <div class="use-case-name">Grocery</div>
+                        <div class="use-case-benefit">Fast checkout + low-stock alerts.</div>
+                    </div>
+                    <div class="use-case" role="listitem">
+                        <div class="use-case-name">Hardware</div>
+                        <div class="use-case-benefit">Handles thousands of SKUs reliably.</div>
+                    </div>
+                    <div class="use-case" role="listitem">
+                        <div class="use-case-name">Pharmacy</div>
+                        <div class="use-case-benefit">Role-based access for staff control.</div>
+                    </div>
+                    <div class="use-case" role="listitem">
+                        <div class="use-case-name">Clothing</div>
+                        <div class="use-case-benefit">Variants, sizes, and easy exchanges.</div>
+                    </div>
+                    <div class="use-case" role="listitem">
+                        <div class="use-case-name">Restaurant</div>
+                        <div class="use-case-benefit">Quick billing during peak hours.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust + Reliability -->
+    <section id="trust" class="trust-section" aria-label="Trust and reliability">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Trust</span>
+                <h2 class="section-heading">Safe to switch. Easy to run.</h2>
+            </div>
+
+            <div class="trust-grid">
+                <div class="trust-item">
+                    <h3>Data stays with you</h3>
+                    <p>Stored locally. You own it.</p>
+                </div>
+                <div class="trust-item">
+                    <h3>Backup &amp; restore built-in</h3>
+                    <p>Roll back anytime.</p>
+                </div>
+                <div class="trust-item">
+                    <h3>Offline-first</h3>
+                    <p>Internet not required.</p>
+                </div>
+                <div class="trust-item">
+                    <h3>No lock-in</h3>
+                    <p>One-time setup. Optional support.</p>
+                </div>
+            </div>
+
+            <div class="engineer-line">
+                <p>OpenForge is built by an engineer focused on reliability, security, and long-term maintainability — not shortcuts.</p>
+                <p class="engineer-sub">Web development available. Cybersecurity services coming next.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack -->
+    <section id="stack" class="stack-section" aria-label="Tech stack">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Tech stack</span>
+                <h2 class="section-heading">Built with proven tools</h2>
+                <p class="section-text">No hype. Just a clean stack that ships fast and stays maintainable.</p>
+            </div>
+
+            <div class="stack-strip" role="list" aria-label="Tech stack">
+                <div class="stack-item" role="listitem">
+                    <img src="assets/logos/html5.svg" alt="HTML5" loading="lazy" decoding="async">
+                    <span>HTML5</span>
+                </div>
+                <div class="stack-item" role="listitem">
+                    <img src="assets/logos/css.svg" alt="CSS" loading="lazy" decoding="async">
+                    <span>CSS</span>
+                </div>
+                <div class="stack-item" role="listitem">
+                    <img src="assets/logos/javascript.svg" alt="JavaScript" loading="lazy" decoding="async">
+                    <span>JavaScript</span>
+                </div>
+                <div class="stack-item" role="listitem">
+                    <img src="assets/logos/csharp.svg" alt="C#" loading="lazy" decoding="async">
+                    <span>C#</span>
+                </div>
+                <div class="stack-item" role="listitem">
+                    <img src="assets/logos/dotnet.svg" alt=".NET" loading="lazy" decoding="async">
+                    <span>.NET</span>
+                </div>
+                <div class="stack-item" role="listitem">
+                    <img src="assets/logos/azure.svg" alt="Microsoft Sentinel" loading="lazy" decoding="async">
+                    <span>Azure Sentinel</span>
+                </div>
+                <div class="stack-item" role="listitem">
+                    <img src="assets/logos/wazuh.svg" alt="Wazuh" loading="lazy" decoding="async">
+                    <span>Wazuh</span>
+                </div>
+                <div class="stack-item" role="listitem">
+                    <img src="assets/logos/nodedotjs.svg" alt="Node.js" loading="lazy" decoding="async">
+                    <span>Node.js</span>
+                </div>
+                <div class="stack-item" role="listitem">
+                    <img src="assets/logos/python.svg" alt="Python" loading="lazy" decoding="async">
+                    <span>Python</span>
+                </div>
+                <div class="stack-item" role="listitem">
+                    <img src="assets/logos/postgresql.svg" alt="PostgreSQL" loading="lazy" decoding="async">
+                    <span>PostgreSQL</span>
+                </div>
+                <div class="stack-item" role="listitem">
+                    <img src="assets/logos/linux.svg" alt="Linux" loading="lazy" decoding="async">
+                    <span>Linux</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Capabilities</span>
+                <h2 class="section-heading">Everything You Need to Run Operations</h2>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2"/>
+                            <path d="M3 9h18M9 3v18"/>
+                        </svg>
+                    </div>
+                    <h3>Billing &amp; Invoicing</h3>
+                    <p>Generate invoices instantly with customizable templates and automatic tax calculations.</p>
+                </div>
+
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                        </svg>
+                    </div>
+                    <h3>Inventory Management</h3>
+                    <p>Track stock levels, purchase orders, and product movements in real-time across locations.</p>
+                </div>
+
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 3v18h18"/>
+                            <path d="M18 17V9M13 17V5M8 17v-3"/>
+                        </svg>
+                    </div>
+                    <h3>Analytics &amp; Reports</h3>
+                    <p>Daily, weekly, and monthly reports with sales trends, stock analysis, and performance metrics.</p>
+                </div>
+
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                        </svg>
+                    </div>
+                    <h3>Purchase Tracking</h3>
+                    <p>Manage vendor relationships, track incoming stock, and optimize purchase patterns.</p>
+                </div>
+
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                        </svg>
+                    </div>
+                    <h3>Access Control</h3>
+                    <p>Role-based permissions ensure only authorized staff can access sensitive operations.</p>
+                </div>
+
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                    </div>
+                    <h3>Low-Stock Alerts</h3>
+                    <p>Automated notifications when inventory drops below threshold levels to prevent stockouts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Approach -->
+    <section id="pricing" class="pricing-section" aria-label="Pricing approach">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">POS pricing</span>
+                <h2 class="section-heading">Simple POS pricing, no surprises</h2>
+                <p class="section-text">We quote based on your requirements—without subscription lock-in.</p>
+            </div>
+
+            <p class="pricing-intro">OpenForge is not a boxed product. Each setup is configured to match how your shop actually works.</p>
+
+            <div class="pricing-table" role="list">
+                <article class="tier-card" role="listitem" aria-label="Starter tier">
+                    <header class="tier-header">
+                        <h3 class="tier-name">Starter</h3>
+                        <p class="tier-tagline">For small shops that want stability, not experiments</p>
+                    </header>
+                    <div class="tier-price">
+                        <div class="tier-amount">LKR 60,000 – 90,000</div>
+                        <div class="tier-label">One-time setup</div>
+                    </div>
+                    <div class="tier-block">
+                        <h4 class="tier-block-title">Includes</h4>
+                        <ul class="tier-list">
+                            <li>POS setup for 1 location</li>
+                            <li>Product &amp; category configuration</li>
+                            <li>Fast billing &amp; invoicing</li>
+                            <li>Real-time stock tracking</li>
+                            <li>Low-stock alerts</li>
+                            <li>Essential reports (daily / monthly)</li>
+                            <li>Installation + guided walkthrough</li>
+                        </ul>
+                    </div>
+                    <div class="tier-best">
+                        <h4 class="tier-block-title">Best for</h4>
+                        <p>Grocery stores, boutiques, small hardware shops</p>
+                    </div>
+                    <a class="btn btn-outline tier-cta" href="contact.html#demo">Request demo</a>
+                </article>
+
+                <article class="tier-card tier-featured" role="listitem" aria-label="Business tier">
+                    <header class="tier-header">
+                        <div class="tier-badge" aria-label="Most chosen">Most chosen</div>
+                        <h3 class="tier-name">Business</h3>
+                        <p class="tier-tagline">For shops where speed, control, and reliability matter</p>
+                    </header>
+                    <div class="tier-price">
+                        <div class="tier-amount">LKR 100,000 – 175,000</div>
+                        <div class="tier-label">One-time setup</div>
+                    </div>
+                    <div class="tier-block">
+                        <h4 class="tier-block-title">Includes everything in Starter, plus</h4>
+                        <ul class="tier-list">
+                            <li>Custom workflows (returns, discounts, approvals)</li>
+                            <li>User roles (Admin / Staff)</li>
+                            <li>Advanced reports &amp; insights</li>
+                            <li>Automated backup &amp; restore setup</li>
+                            <li>Invoice layout customization</li>
+                            <li>Performance tuning for high-volume billing</li>
+                        </ul>
+                    </div>
+                    <div class="tier-best">
+                        <h4 class="tier-block-title">Best for</h4>
+                        <p>Hardware shops, pharmacies, multi-counter businesses</p>
+                    </div>
+                    <a class="btn btn-primary tier-cta" href="contact.html#demo">Request demo</a>
+                </article>
+
+                <article class="tier-card" role="listitem" aria-label="Custom tier">
+                    <header class="tier-header">
+                        <h3 class="tier-name">Custom / Enterprise</h3>
+                        <p class="tier-tagline">For businesses with unique or large-scale operations</p>
+                    </header>
+                    <div class="tier-price">
+                        <div class="tier-amount">Custom quote</div>
+                        <div class="tier-label">One-time setup</div>
+                    </div>
+                    <div class="tier-block">
+                        <h4 class="tier-block-title">Includes</h4>
+                        <ul class="tier-list">
+                            <li>Fully tailored features</li>
+                            <li>Multi-location / branch support</li>
+                            <li>Data migration (Excel / legacy systems)</li>
+                            <li>Integration planning</li>
+                            <li>Custom reporting</li>
+                            <li>Priority handling</li>
+                        </ul>
+                    </div>
+                    <div class="tier-best">
+                        <h4 class="tier-block-title">Best for</h4>
+                        <p>Large shops, chains, complex workflows</p>
+                    </div>
+                    <a class="btn btn-outline tier-cta" href="contact.html#demo">Talk to us</a>
+                </article>
+            </div>
+
+            <p class="pricing-disclaimer">Final pricing depends on shop size, number of users, and custom requirements.<br>A clear quote is shared after the demo — no hidden costs.</p>
+
+            <details class="pricing-addons">
+                <summary>Optional add-ons</summary>
+                <div class="addons-body">
+                    <p class="addons-note">Only suggested if relevant to your setup. Add-ons are quoted only if needed.</p>
+                    <ul class="addons-list">
+                        <li>Invoice design customization</li>
+                        <li>Data import from Excel</li>
+                        <li>Additional counters</li>
+                        <li>Custom reports</li>
+                        <li>Security hardening (coming soon)</li>
+                    </ul>
+                </div>
+            </details>
+
+            <div class="pricing-divider" aria-hidden="true"></div>
+
+            <div class="support-section" aria-label="Optional monthly support">
+                <div class="support-header">
+                    <h3 class="support-title">Optional monthly support</h3>
+                    <p class="support-subtext">Support is optional. No lock-ins.</p>
+                </div>
+
+                <div class="support-grid">
+                    <div class="support-card" aria-label="Support 4000">
+                        <div class="support-price">LKR 4,000 <span>/ month</span></div>
+                        <ul class="support-list">
+                            <li>Minor changes</li>
+                            <li>Bug fixes</li>
+                            <li>Email support</li>
+                        </ul>
+                    </div>
+
+                    <div class="support-card support-featured" aria-label="Support 7500">
+                        <div class="support-price">LKR 7,500 <span>/ month</span></div>
+                        <ul class="support-list">
+                            <li>Priority support</li>
+                            <li>Feature tweaks</li>
+                            <li>Health checks</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <p class="support-footnote">You can opt in or out anytime.</p>
+                <div class="support-actions">
+                    <a class="btn btn-outline" href="contact.html#demo">Request demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who This Is For / Not For -->
+    <section class="fit-section" aria-label="Who this is for">
+        <div class="container">
+            <div class="fit-grid">
+                <div class="fit-col">
+                    <h2 class="fit-title">This is for:</h2>
+                    <ul class="fit-list">
+                        <li>Small–medium shops</li>
+                        <li>Hardware / grocery / pharmacy</li>
+                        <li>Businesses tired of manual work</li>
+                        <li>Owners who want control</li>
+                    </ul>
+                </div>
+                <div class="fit-col">
+                    <h2 class="fit-title">This is NOT for:</h2>
+                    <ul class="fit-list">
+                        <li>Enterprise chains (yet)</li>
+                        <li>Fully cloud-only POS users</li>
+                        <li>Free software seekers</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="faq-section" aria-label="Frequently asked questions">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">FAQ</span>
+                <h2 class="section-heading">Quick answers</h2>
+                <p class="section-text">The details clients ask before they commit.</p>
+            </div>
+
+            <div class="faq-list">
+                <details class="faq-item">
+                    <summary>Does it work without internet?</summary>
+                    <div class="faq-answer"><p>Yes. OpenForge is offline-first. Internet is optional.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary>Can invoices be customized?</summary>
+                    <div class="faq-answer"><p>Yes. Layout, logo, footer, and fields can be adjusted.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary>Can multiple staff use it?</summary>
+                    <div class="faq-answer"><p>Yes. Role-based access for admin and staff.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary>How is backup handled?</summary>
+                    <div class="faq-answer"><p>Automatic backups with manual restore options.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary>How does support work?</summary>
+                    <div class="faq-answer"><p>Email or WhatsApp. Optional monthly support available.</p></div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <img src="Logo.png" alt="OpenForge" class="footer-logo">
+                    <p>Reliable systems, clean websites, secure foundations.</p>
+                    <div class="footer-ctas" aria-label="Contact links">
+                        <a class="footer-pill" href="https://wa.me/94778177435" target="_blank" rel="noopener">WhatsApp</a>
+                        <a class="footer-pill" href="mailto:contact@getopenforge.net?subject=OpenForge%20Demo%20Request">Email</a>
+                    </div>
+                </div>
+
+                <div class="footer-columns" aria-label="Footer navigation">
+                    <div class="footer-col">
+                        <div class="footer-col-title">Explore</div>
+                        <div class="footer-col-links">
+                            <a href="pos.html">POS</a>
+                            <a href="web.html">Web</a>
+                            <a href="security.html">Security</a>
+                        </div>
+                    </div>
+
+                    <div class="footer-col">
+                        <div class="footer-col-title">Pricing</div>
+                        <div class="footer-col-links">
+                            <a href="#pricing">POS Pricing</a>
+                            <a href="web.html#web-pricing">Website Pricing</a>
+                        </div>
+                    </div>
+
+                    <div class="footer-col">
+                        <div class="footer-col-title">Contact</div>
+                        <div class="footer-col-links">
+                            <a href="contact.html">Request a Demo</a>
+                            <a href="https://wa.me/94778177435" target="_blank" rel="noopener">+94 77 81 77 435</a>
+                            <a href="mailto:contact@getopenforge.net?subject=OpenForge%20Demo%20Request">contact@getopenforge.net</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 OpenForge. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
