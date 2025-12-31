@@ -56,8 +56,8 @@ Final pricing depends on scope, number of users, shop size, content readiness, a
 
 Use the site’s contact section (`#demo`) to request a demo/quote.
 
-Current email (temporary):
-- `lakshan.sam28@gmail.com`
+Email:
+- `contact@getopenforge.net`
 
 WhatsApp:
 - `+94 77 81 77 435`

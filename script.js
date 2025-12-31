@@ -387,7 +387,7 @@ document.querySelectorAll('.btn').forEach(btn => {
     }
 
     function openEmail({ subject, body }) {
-        const to = 'lakshan.sam28@gmail.com';
+        const to = 'contact@getopenforge.net';
         const url = `mailto:${encodeURIComponent(to)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
         window.location.href = url;
     }
