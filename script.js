@@ -114,12 +114,10 @@ document.querySelectorAll('.btn').forEach(btn => {
 
 // Screenshots Gallery Tabs
 (function initGalleryTabs() {
-    const tabs = Array.from(document.querySelectorAll('.gallery-tab'));
-    const image = document.querySelector('.gallery-image');
+    const cards = Array.from(document.querySelectorAll('.gallery-card'));
+    if (!cards.length) return;
 
-    if (!tabs.length || !image) return;
-
-    function setActiveTab(nextTab) {
+    function setActiveTab(tabs, nextTab) {
         tabs.forEach(tab => {
             const isActive = tab === nextTab;
             tab.classList.toggle('is-active', isActive);
@@ -127,7 +125,7 @@ document.querySelectorAll('.btn').forEach(btn => {
         });
     }
 
-    function swapImage(nextSrc, nextLabel) {
+    function swapImage(image, nextSrc, nextLabel) {
         const currentSrc = image.getAttribute('src');
         if (nextSrc && currentSrc === nextSrc) return;
 
@@ -152,12 +150,59 @@ document.querySelectorAll('.btn').forEach(btn => {
         }, 160);
     }
 
-    tabs.forEach(tab => {
-        tab.addEventListener('click', () => {
-            setActiveTab(tab);
-            const label = tab.textContent.trim();
-            const src = tab.getAttribute('data-src') || '';
-            swapImage(src, label);
+    function swapVideo(video, nextSrc, fallbackSrc) {
+        const source = video.querySelector('source');
+        if (!source) return;
+
+        const currentSrc = source.getAttribute('src') || '';
+        if (nextSrc && currentSrc === nextSrc) return;
+
+        video.pause();
+
+        if (nextSrc) {
+            source.setAttribute('src', nextSrc);
+            source.setAttribute('type', 'video/mp4');
+        }
+
+        if (fallbackSrc) {
+            let fallback = video.querySelector('source[data-fallback]');
+            if (!fallback) {
+                fallback = document.createElement('source');
+                fallback.setAttribute('data-fallback', 'true');
+                video.appendChild(fallback);
+            }
+            fallback.setAttribute('src', fallbackSrc);
+            fallback.setAttribute('type', 'video/quicktime');
+        }
+
+        video.load();
+    }
+
+    cards.forEach(card => {
+        const tabs = Array.from(card.querySelectorAll('.gallery-tab'));
+        if (!tabs.length) return;
+
+        const image = card.querySelector('.gallery-image');
+        const video = card.querySelector('.gallery-video');
+        if (!image && !video) return;
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                setActiveTab(tabs, tab);
+                const label = tab.textContent.trim();
+                const kind = (tab.getAttribute('data-kind') || '').trim();
+                const src = tab.getAttribute('data-src') || '';
+                const fallback = tab.getAttribute('data-fallback') || '';
+
+                if (kind === 'video' && video) {
+                    swapVideo(video, src, fallback);
+                    return;
+                }
+
+                if (image) {
+                    swapImage(image, src, label);
+                }
+            });
         });
     });
 })();

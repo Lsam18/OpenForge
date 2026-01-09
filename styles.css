@@ -2100,6 +2100,17 @@ body {
     transition: opacity var(--transition-slow);
 }
 
+.gallery-video {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    display: block;
+    border-radius: calc(var(--radius-xl) - 0.25rem);
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: rgba(0, 0, 0, 0.75);
+    box-shadow: 0 30px 110px rgba(0, 0, 0, 0.75);
+}
+
 .gallery-image.is-fading {
     opacity: 0;
 }
@@ -2740,6 +2751,164 @@ body {
     object-fit: contain;
     background: rgba(0, 0, 0, 0.86);
     filter: saturate(1.02) contrast(1.02);
+}
+
+.device-screen-inner video {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+    background: rgba(0, 0, 0, 0.86);
+}
+
+/* Phone mockup (for Demo 1 mobile recording) */
+.phone-mockup {
+    position: relative;
+    z-index: 1;
+    width: min(520px, 100%);
+    margin: 0 auto;
+}
+
+.phone-frame {
+    border-radius: 38px;
+    padding: 14px;
+    background:
+        radial-gradient(420px 260px at 40% 10%, rgba(255, 255, 255, 0.06), transparent 60%),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.10), rgba(255, 255, 255, 0.02));
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    box-shadow:
+        0 40px 140px rgba(0, 0, 0, 0.78),
+        0 0 0 1px rgba(255, 255, 255, 0.04) inset;
+    overflow: hidden;
+}
+
+.phone-screen {
+    position: relative;
+    border-radius: 24px;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    /* Match recorded mobile demo ratio so it doesn't look like a tiny strip */
+    aspect-ratio: 2 / 3;
+}
+
+.phone-screen::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 96px;
+    height: 8px;
+    border-radius: 9999px;
+    background: rgba(0, 0, 0, 0.55);
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    pointer-events: none;
+    z-index: 2;
+}
+
+/* Web page demo mockups (bigger + cleaner) */
+.demo-mockups-card {
+    overflow: hidden;
+}
+
+/* Orange cover behind demo videos (demo block only) */
+.demo-mockups-card .device-screen-inner {
+    background: #f59e0b;
+}
+
+.demo-mockups-card .device-screen-inner video {
+    background: #f59e0b;
+}
+
+/* Orange accent for demo block */
+.demo-mockups-card .demo-preview-badge {
+    background: rgba(245, 158, 11, 0.16);
+    border-color: rgba(245, 158, 11, 0.34);
+}
+
+.demo-mockups-grid {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.35fr);
+    grid-template-rows: auto auto;
+    gap: var(--space-lg);
+    padding: 1.1rem;
+    align-items: stretch;
+}
+
+.demo-mockup-item {
+    background:
+        radial-gradient(520px 280px at 20% 10%, rgba(139, 92, 246, 0.10), transparent 60%),
+        radial-gradient(520px 280px at 90% 30%, rgba(244, 63, 94, 0.07), transparent 62%),
+        rgba(0, 0, 0, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    border-radius: calc(var(--radius-xl) - 0.25rem);
+    padding: 1.05rem;
+    box-shadow: 0 26px 90px rgba(0, 0, 0, 0.70);
+}
+
+.demo-mockup-item.is-mobile {
+    grid-row: 1 / span 2;
+}
+
+.demo-kpis {
+    margin-top: var(--space-lg);
+    grid-template-columns: 1fr 1fr;
+}
+
+.demo-kpis .showcase-kpi {
+    padding: 0.9rem 0.95rem;
+}
+
+@media (max-width: 640px) {
+    .demo-kpis {
+        grid-template-columns: 1fr;
+    }
+}
+
+.demo-mockup-label {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.4rem 0.75rem;
+    border-radius: 9999px;
+    background: rgba(245, 158, 11, 0.16);
+    border: 1px solid rgba(245, 158, 11, 0.34);
+    color: rgba(241, 245, 249, 0.95);
+    font-weight: 900;
+    font-size: 0.85rem;
+    letter-spacing: 0.02em;
+    margin-bottom: 0.9rem;
+}
+
+.demo-mockups-grid .laptop-mockup {
+    width: 100%;
+    transform: none;
+}
+
+.demo-mockups-grid .laptop-screen {
+    border: 1px solid rgba(245, 158, 11, 0.32);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.10), rgba(255, 255, 255, 0.02));
+}
+
+.demo-mockups-grid .phone-frame {
+    border-color: rgba(245, 158, 11, 0.30);
+}
+
+.demo-mockups-grid .laptop-base {
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.10), rgba(255, 255, 255, 0.03));
+}
+
+@media (max-width: 1024px) {
+    .demo-mockups-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .demo-mockup-item.is-mobile {
+        grid-row: auto;
+    }
 }
 
 /* Laptop mockup */
