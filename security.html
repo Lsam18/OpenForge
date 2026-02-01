@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="OpenForge Cyber Security — practical hardening now and future-ready SIEM monitoring.">
-    <meta property="og:title" content="OpenForge Cyber Security">
-    <meta property="og:description" content="Practical security hardening and future-ready monitoring.">
+    <meta name="description" content="OpenForge Cybersecurity — SIEM, cloud security, and security operations for startups, MSPs, and SaaS teams.">
+    <meta property="og:title" content="OpenForge Cybersecurity">
+    <meta property="og:description" content="SIEM, cloud security architecture, and security operations.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="assets/og.svg">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="OpenForge Cyber Security">
-    <meta name="twitter:description" content="Practical security hardening and future-ready monitoring.">
+    <meta name="twitter:title" content="OpenForge Cybersecurity">
+    <meta name="twitter:description" content="SIEM, cloud security architecture, and security operations.">
     <meta name="twitter:image" content="assets/og.svg">
 
     <link rel="icon" type="image/png" href="Logo.png">
@@ -25,7 +25,7 @@
         gtag('config', 'G-XXXXXXXXXX');
     </script>
 
-    <title>OpenForge Cyber Security</title>
+    <title>OpenForge Cybersecurity</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -44,7 +44,7 @@
                 <ul class="nav-links" id="navLinks">
                     <li><a href="pos.html">POS</a></li>
                     <li><a href="web.html">Web</a></li>
-                    <li><a href="security.html">Security</a></li>
+                    <li><a href="security.html">Cybersecurity</a></li>
                     <li><a href="contact.html" class="nav-cta">Contact</a></li>
                 </ul>
             </div>
@@ -52,34 +52,19 @@
     </header>
 
     <!-- Hero -->
-    <section class="hero">
+    <section class="hero hero-security">
         <div class="hero-bg"></div>
-        <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="assets/screenshots/security-siem.svg" aria-hidden="true">
-            <source src="assets/hero.mp4?v=20251225-premium" type="video/mp4">
-        </video>
         <div class="container">
             <div class="hero-grid">
                 <div class="hero-content">
-                    <img class="hero-logo" src="Logo.png" alt="OpenForge" decoding="async" fetchpriority="high">
-                    <div class="hero-pills" aria-label="Page">
-                        <span class="hero-pill">Cyber Security</span>
-                        <span class="hero-pill">Hardening</span>
-                        <span class="hero-pill">Monitoring</span>
-                    </div>
+                    <img class="hero-logo" src="Logo.png" alt="OpenForge">
                     <h1 class="hero-heading">
-                        <span class="hero-line hero-line-1">Security you can grow into.</span>
-                        <span class="hero-line hero-line-2">Clean fundamentals first.</span>
-                        <span class="hero-line hero-line-3">Visibility when you’re ready.</span>
+                        <span class="hero-line">SIEM, cloud security, and security operations</span>
                     </h1>
-                    <p class="hero-text">Practical improvements that reduce risk without slowing your team down.</p>
-                    <ul class="hero-highlights" aria-label="Key highlights">
-                        <li>Access controls</li>
-                        <li>Audit trails</li>
-                        <li>SIEM planning</li>
-                    </ul>
+                    <p class="hero-text">For startups, MSPs, and SaaS teams that need security detection, architecture, and operational clarity.</p>
                     <div class="hero-actions">
-                        <a href="contact.html" class="btn btn-primary">Talk to us</a>
-                        <a href="#roadmap" class="btn btn-outline">Roadmap</a>
+                        <a class="btn btn-primary" href="contact.html#demo">Start a conversation</a>
+                        <a class="btn btn-outline" href="contact.html">Contact</a>
                     </div>
                 </div>
 
@@ -87,27 +72,27 @@
                     <div class="hero-showcase">
                         <div class="showcase-surface">
                             <div class="showcase-main">
-                                <div class="showcase-badge-row">Cyber Security</div>
+                                <div class="showcase-badge-row">Security Operations</div>
                                 <div class="showcase-frame">
-                                    <img src="assets/screenshots/security-siem.svg" alt="" loading="lazy" decoding="async">
+                                    <img src="assets/screenshots/security-siem.svg" alt="SIEM dashboards" loading="lazy">
                                 </div>
                             </div>
                             <div class="showcase-strip">
                                 <div class="showcase-mini">
-                                    <div class="showcase-mini-badge">Hardening</div>
-                                    <img src="assets/screenshots/security-hardening.svg" alt="" loading="lazy" decoding="async">
+                                    <div class="showcase-mini-badge">SIEM</div>
+                                    <img src="assets/screenshots/security-siem.svg" alt="" loading="lazy">
                                 </div>
                                 <div class="showcase-mini">
-                                    <div class="showcase-mini-badge">Foundations</div>
-                                    <img src="assets/screenshots/stock.svg" alt="" loading="lazy" decoding="async">
+                                    <div class="showcase-mini-badge">Cloud</div>
+                                    <img src="assets/screenshots/stock.svg" alt="" loading="lazy">
                                 </div>
                             </div>
                         </div>
 
                         <div class="showcase-kpis">
-                            <div class="showcase-kpi"><strong>Controls</strong><span>Least privilege + roles.</span></div>
-                            <div class="showcase-kpi"><strong>Visibility</strong><span>Logs into signals.</span></div>
-                            <div class="showcase-kpi"><strong>Resilience</strong><span>Backups + recovery thinking.</span></div>
+                            <div class="showcase-kpi"><strong>Detection</strong><span>Real alerts, less noise.</span></div>
+                            <div class="showcase-kpi"><strong>Response</strong><span>Playbooks & runbooks.</span></div>
+                            <div class="showcase-kpi"><strong>Identity</strong><span>Secure by default.</span></div>
                         </div>
                     </div>
                 </div>
@@ -115,154 +100,304 @@
         </div>
     </section>
 
-    <!-- Cyber Security -->
-    <section id="security" class="security-section security-minimal" aria-label="Cyber security">
+    <!-- Services -->
+    <section id="services" class="sec-services" aria-label="Services">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Cyber Security</span>
-                <h2 class="section-heading">Security you can grow into</h2>
-                <p class="section-text">Clean fundamentals first. Then full visibility with SIEM + security monitoring when you’re ready.</p>
+                <span class="section-tag">Services</span>
+                <h2 class="section-heading">What we deliver</h2>
             </div>
 
-            <div class="security-split" role="list">
-                <article class="security-panel" role="listitem">
-                    <div class="security-kicker">Soon</div>
-                    <div class="service-preview product-window" aria-hidden="true">
-                        <div class="window-header">
-                            <span></span>
-                            <span></span>
-                            <span></span>
+            <div class="services-grid">
+                <article class="sec-service-card" style="--card-index: 0;">
+                    <div class="card-accent"></div>
+                    <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
+                    </svg>
+                    <h3>SIEM &amp; Detection</h3>
+                    <p class="card-intro">We design and deploy Sentinel, Splunk, or ELK architectures that fit your scale. Real alerts from day one, tuned to your environment and threat model.</p>
+                    <div class="card-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Tools:</span>
+                            <span class="detail-value">Sentinel, Splunk Enterprise, ELK Stack, AWS Security Hub</span>
                         </div>
-                        <img src="assets/screenshots/security-hardening.svg" alt="Security hardening preview" loading="lazy" decoding="async">
+                        <div class="detail-item">
+                            <span class="detail-label">Deliverables:</span>
+                            <span class="detail-value">Architecture design, data ingestion, detection rules, correlation logic, tuning</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Outcome:</span>
+                            <span class="detail-value">Reduce alert noise by 60%+. Real signal by week 2.</span>
+                        </div>
                     </div>
-                    <h3 class="security-title">Security hardening for SMEs</h3>
-                    <p class="security-lead">Reduce common risks without adding complexity for your team.</p>
-                    <ul class="security-list">
-                        <li><strong>Access controls</strong> for admins and staff (least privilege)</li>
-                        <li><strong>Audit trails</strong> for critical actions and operational history</li>
-                        <li><strong>Backup resilience</strong> with restore checks to reduce downtime</li>
-                        <li><strong>Network basics</strong> to separate POS, office, and guest traffic</li>
-                    </ul>
+                    <div class="card-glow"></div>
+                </article>
+                <article class="sec-service-card" style="--card-index: 1;">
+                    <div class="card-accent"></div>
+                    <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/><circle cx="5" cy="12" r="1"/><path d="M12 19v-6m0 0V5M9 8l-6 4m0 0v4m6-4l6-4m0 0v4M15 8l6-4"/>
+                    </svg>
+                    <h3>Security Operations</h3>
+                    <p class="card-intro">Build triage workflows and runbooks that operators actually follow. Alert routing, escalation logic, and playbooks reduce noise and cut response time.</p>
+                    <div class="card-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Coverage:</span>
+                            <span class="detail-value">Triage workflows, playbook automation, escalation, on-call rotations</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Includes:</span>
+                            <span class="detail-value">Alert tuning, false positive reduction, response optimization, training</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Impact:</span>
+                            <span class="detail-value">Cut MTTR by 50%. Team handles 3x more alerts with same headcount.</span>
+                        </div>
+                    </div>
+                    <div class="card-glow"></div>
+                </article>
+                <article class="sec-service-card" style="--card-index: 2;">
+                    <div class="card-accent"></div>
+                    <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                    </svg>
+                    <h3>Identity Hardening</h3>
+                    <p class="card-intro">MFA enforcement, Conditional Access policies, least-privilege role design. Whether Azure AD or AWS IAM, we architect identity for zero-trust.</p>
+                    <div class="card-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Configuration:</span>
+                            <span class="detail-value">MFA enforcement, passwordless auth, risk-based access, device compliance</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Scope:</span>
+                            <span class="detail-value">Azure AD, AWS IAM, GCP IAM, app-level controls, audit &amp; remediation</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Result:</span>
+                            <span class="detail-value">Eliminate shared accounts. Zero compromised credentials in 90 days.</span>
+                        </div>
+                    </div>
+                    <div class="card-glow"></div>
+                </article>
+                <article class="sec-service-card" style="--card-index: 3;">
+                    <div class="card-accent"></div>
+                    <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/><path d="M12 9v6m-3-3h6"/>
+                    </svg>
+                    <h3>Cloud Security</h3>
+                    <p class="card-intro">Azure Resource Manager policies, AWS security groups, infrastructure-as-code guardrails. Baselines for compliance, automated scanning, remediation.</p>
+                    <div class="card-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Platforms:</span>
+                            <span class="detail-value">Azure (subscription policy, RBAC), AWS (SCPs, security config, IAM), GCP</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Enforcement:</span>
+                            <span class="detail-value">Network segmentation, encryption at rest/transit, patch scanning, CIS benchmarks</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Benefit:</span>
+                            <span class="detail-value">No more manual compliance checks. Secure by default in every environment.</span>
+                        </div>
+                    </div>
+                    <div class="card-glow"></div>
+                </article>
+                <article class="sec-service-card" style="--card-index: 4;">
+                    <div class="card-accent"></div>
+                    <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M12 2v20M2 12h20M6 6l12 12M18 6l-12 12"/>
+                    </svg>
+                    <h3>Incident Readiness</h3>
+                    <p class="card-intro">Detection engineering tuned to your threat model. Tabletop exercises, runbook validation, on-call playbooks so your team is ready.</p>
+                    <div class="card-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Detection:</span>
+                            <span class="detail-value">Threat modeling, attack simulation, detection rules, sigma rules engineering</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Exercises:</span>
+                            <span class="detail-value">Tabletop simulations, response drills, playbook validation in production conditions</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Outcome:</span>
+                            <span class="detail-value">Your team handles incidents independently. 2-hour response SLA achieved.</span>
+                        </div>
+                    </div>
+                    <div class="card-glow"></div>
+                </article>
+                <article class="sec-service-card" style="--card-index: 5;">
+                    <div class="card-accent"></div>
+                    <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M12 6v6l4.28 2.55"/>
+                    </svg>
+                    <h3>Security Assessments</h3>
+                    <p class="card-intro">Practical, high-impact audits. We prioritize what matters for your risk profile, not checkbox compliance.</p>
+                    <div class="card-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Scope:</span>
+                            <span class="detail-value">Infrastructure, identity, applications, data handling, vendor risk, compliance</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Deliverables:</span>
+                            <span class="detail-value">Risk-ranked findings, remediation roadmap, POC fixes, architecture review</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Value:</span>
+                            <span class="detail-value">Fix high-risk issues in 30 days. Clear before/after metrics and proof.</span>
+                        </div>
+                    </div>
+                    <div class="card-glow"></div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- How We Work -->
+    <section id="process" class="sec-process" aria-label="How we work">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Process</span>
+                <h2 class="section-heading">Clear phases. Measurable outcomes.</h2>
+            </div>
+
+            <div class="process-grid">
+                <div class="process-step" style="--step-index: 0;">
+                    <div class="step-badge">1</div>
+                    <h4>Discovery</h4>
+                    <p>Map your environment, identify critical assets, and clarify detection priorities.</p>
+                    <div class="step-connector"></div>
+                </div>
+                <div class="process-step" style="--step-index: 1;">
+                    <div class="step-badge">2</div>
+                    <h4>Design</h4>
+                    <p>Architecture and operational design with rollback plans built in.</p>
+                    <div class="step-connector"></div>
+                </div>
+                <div class="process-step" style="--step-index: 2;">
+                    <div class="step-badge">3</div>
+                    <h4>Implementation</h4>
+                    <p>Phased rollout, pilot validation, and infrastructure-as-code where possible.</p>
+                    <div class="step-connector"></div>
+                </div>
+                <div class="process-step" style="--step-index: 3;">
+                    <div class="step-badge">4</div>
+                    <h4>Validation</h4>
+                    <p>Detection tuning, tabletop exercises, and runbook validation in production-like conditions.</p>
+                    <div class="step-connector"></div>
+                </div>
+                <div class="process-step" style="--step-index: 4;">
+                    <div class="step-badge">5</div>
+                    <h4>Handoff</h4>
+                    <p>Your team owns it. Weekly tuning and advisory support for long-term resilience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust -->
+    <section id="trust" class="sec-trust" aria-label="Trust">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Trust</span>
+                <h2 class="section-heading">Confidential, documented, and accountable</h2>
+            </div>
+
+            <div class="trust-grid">
+                <div>
+                    <h4>Confidentiality</h4>
+                    <p>We treat your architecture, findings, and access with strict confidence. NDAs available.</p>
+                </div>
+                <div>
+                    <h4>Documentation</h4>
+                    <p>Runbooks, diagrams, and decision records delivered as part of every engagement.</p>
+                </div>
+                <div>
+                    <h4>Partnership</h4>
+                    <p>Focused on knowledge transfer so your team can own security operations day-to-day.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="sec-testimonials" aria-label="Client testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Success Stories</span>
+                <h2 class="section-heading">Trusted by startups and MSPs</h2>
+            </div>
+
+            <div class="testimonials-grid">
+                <article class="testimonial-card" style="--testimonial-index: 0;">
+                    <div class="testimonial-accent"></div>
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">V</div>
+                        <div class="testimonial-meta">
+                            <h4>Victor</h4>
+                            <p>Engineering Lead, India</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-quote">
+                        <p>"Needed Wazuh deployment done right. Clear scope, realistic timeline, and hands-on knowledge transfer. My team is confident running it solo now."</p>
+                    </div>
+                    <div class="testimonial-context">
+                        <span class="context-tag">Wazuh SIEM Setup</span>
+                        <span class="context-tag">Knowledge Transfer</span>
+                    </div>
+                    <div class="testimonial-glow"></div>
                 </article>
 
-                <article class="security-panel" role="listitem">
-                    <div class="security-kicker">In the future</div>
-                    <div class="service-preview product-window" aria-hidden="true">
-                        <div class="window-header">
-                            <span></span>
-                            <span></span>
-                            <span></span>
+                <article class="testimonial-card" style="--testimonial-index: 1;">
+                    <div class="testimonial-accent"></div>
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">B</div>
+                        <div class="testimonial-meta">
+                            <h4>Brian Brown</h4>
+                            <p>MSP Director, USA</p>
                         </div>
-                        <img src="assets/screenshots/security-siem.svg" alt="SIEM monitoring preview" loading="lazy" decoding="async">
                     </div>
-                    <h3 class="security-title">SIEM implementation + security monitoring</h3>
-                    <p class="security-lead">Turn logs into signals—detect issues early and respond with confidence.</p>
-                    <ul class="security-list">
-                        <li><strong>Log collection</strong> from servers, endpoints, firewalls, and apps</li>
-                        <li><strong>Normalization</strong> + dashboards for clear visibility</li>
-                        <li><strong>Correlation rules</strong> and alerting for suspicious activity</li>
-                        <li><strong>Use-case tuning</strong> for retail/POS environments (fraud, access abuse)</li>
-                        <li><strong>Retention &amp; reporting</strong> for investigations and compliance needs</li>
-                        <li><strong>Response playbooks</strong> for triage, containment, and recovery</li>
-                    </ul>
+                    <div class="testimonial-quote">
+                        <p>"Phased Huntress + Defender migration for 350+ endpoints across 5 customers. Structured approach, playbooks included. Exactly what an MSP needs to scale securely."</p>
+                    </div>
+                    <div class="testimonial-context">
+                        <span class="context-tag">EDR/ITDR/SIEM Stack</span>
+                        <span class="context-tag">MSP Architecture</span>
+                    </div>
+                    <div class="testimonial-glow"></div>
+                </article>
+
+                <article class="testimonial-card" style="--testimonial-index: 2;">
+                    <div class="testimonial-accent"></div>
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">+</div>
+                        <div class="testimonial-meta">
+                            <h4>Your story</h4>
+                            <p>Let's build it together</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-quote">
+                        <p>"Ready to implement a security stack that actually works for your team? Let's start with a discovery call and see what's possible."</p>
+                    </div>
+                    <div class="testimonial-context">
+                        <span class="context-tag">Discovery</span>
+                        <span class="context-tag">Planning</span>
+                    </div>
+                    <div class="testimonial-glow"></div>
                 </article>
             </div>
         </div>
     </section>
 
-    <!-- MSP Security Architecture Reference Project -->
-    <section id="msp-reference" class="security-reference-section" aria-label="MSP Security Architecture Reference Project">
+    <!-- CTA -->
+    <section class="sec-cta" aria-label="Call to action">
         <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Reference Project</span>
-                <h2 class="section-heading">Security Architecture & Pilot Design – MSP Environment</h2>
-                <p class="section-text">A real-world planning and architecture exercise focused on designing a secure, scalable security stack for a managed service provider (MSP), prior to full production rollout.</p>
-            </div>
-
-            <div class="reference-content">
-                <div class="reference-block">
-                    <h3>Environment Overview</h3>
-                    <ul class="reference-list">
-                        <li>US-based Managed Service Provider (MSP)</li>
-                        <li>Hundreds of endpoints across multiple customer tenants</li>
-                        <li>Microsoft 365 / Entra ID identity platform</li>
-                        <li>Existing EDR solution in place, planning phased migration</li>
-                        <li>Email security via third-party gateway</li>
-                    </ul>
+            <div class="home-cta-card">
+                <div class="home-cta-copy">
+                    <h2 class="home-cta-title">Need clarity before committing to tooling?</h2>
+                    <p class="home-cta-text">Let's talk through your environment and scope the simplest path forward.</p>
                 </div>
-
-                <div class="reference-block">
-                    <h3>Objective</h3>
-                    <p>Design a low-risk, phased security modernization approach that could be validated internally before expanding to customer environments. The goal was to create a structured path forward that minimized disruption while improving security posture across identity, endpoint, and email layers.</p>
-                </div>
-
-                <div class="reference-block">
-                    <h3>Scope of Work</h3>
-                    <ul class="reference-list">
-                        <li>Current-state security posture review (identity, endpoint, email)</li>
-                        <li>Target-state security architecture design</li>
-                        <li>Phased migration strategy with internal pilot first</li>
-                        <li>Identity security baseline recommendations (MFA, Conditional Access, admin roles)</li>
-                        <li>Endpoint protection coexistence and rollback planning</li>
-                        <li>Weekly security reporting model</li>
-                        <li>MSP-ready rollout and operational playbooks</li>
-                    </ul>
-                </div>
-
-                <div class="reference-block">
-                    <h3>Key Focus Areas</h3>
-                    <ul class="reference-list">
-                        <li>Phased rollout to reduce operational risk</li>
-                        <li>Policy precedence analysis between Microsoft Defender and third-party EDR tools</li>
-                        <li>Clear separation of responsibilities across security tools</li>
-                        <li>Repeatable design suitable for multi-tenant MSP environments</li>
-                    </ul>
-                </div>
-
-                <div class="reference-block">
-                    <h3>Deliverables Produced</h3>
-                    <ul class="reference-list">
-                        <li>Current-state assessment summary</li>
-                        <li>Target-state security architecture</li>
-                        <li>Internal pilot validation plan</li>
-                        <li>Identity hardening recommendations</li>
-                        <li>Policy precedence and conflict-avoidance guidance</li>
-                        <li>Operational triage and escalation playbook</li>
-                        <li>Reference documentation for future customer rollouts</li>
-                    </ul>
-                </div>
-
-                <div class="reference-note">
-                    <p>While this engagement focused on planning and validation rather than full deployment, it demonstrates a structured, security-first approach to designing scalable SOC and security stack implementations. The deliverables provide a foundation for confident, repeatable rollouts across customer environments.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Roadmap -->
-    <section id="roadmap" class="roadmap-section" aria-label="Roadmap">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Roadmap</span>
-                <h2 class="section-heading">Direction, not hype</h2>
-                <p class="section-text">Clear focus now, security next, and deeper monitoring later.</p>
-            </div>
-
-            <div class="roadmap-grid">
-                <div class="roadmap-item">
-                    <div class="roadmap-kicker">Now</div>
-                    <h3>POS / Business Systems</h3>
-                    <p>Fast billing, inventory, reporting, and workflows.</p>
-                </div>
-                <div class="roadmap-item">
-                    <div class="roadmap-kicker">Next</div>
-                    <h3>Security hardening for SMEs</h3>
-                    <p>Stronger controls, audit trails, and safer operations.</p>
-                </div>
-                <div class="roadmap-item">
-                    <div class="roadmap-kicker">Later</div>
-                    <h3>Monitoring / SOC-style services</h3>
-                    <p>Visibility and response for business infrastructure.</p>
+                <div class="home-cta-actions">
+                    <a class="btn btn-primary" href="contact.html#demo">Start a conversation</a>
+                    <a class="btn btn-outline" href="contact.html">Contact</a>
                 </div>
             </div>
         </div>
@@ -278,7 +413,6 @@
                     <div class="footer-ctas" aria-label="Contact links">
                         <a class="footer-pill" href="https://wa.me/94778177435" target="_blank" rel="noopener">WhatsApp</a>
                         <a class="footer-pill" href="mailto:contact@getopenforge.net?subject=OpenForge%20Demo%20Request">Email</a>
-                        <a class="footer-pill" href="https://www.upwork.com/freelancers/~01278f31a6af00dd21?mp_source=share" target="_blank" rel="noopener">Hire on Upwork</a>
                     </div>
                 </div>
 
@@ -288,7 +422,7 @@
                         <div class="footer-col-links">
                             <a href="pos.html">POS</a>
                             <a href="web.html">Web</a>
-                            <a href="security.html">Security</a>
+                            <a href="security.html">Cybersecurity</a>
                         </div>
                     </div>
 
