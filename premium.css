@@ -68,7 +68,7 @@ body.page-exiting::after {
     height: 78px;
     z-index: 9999;
     border-radius: 24px;
-    background: url("assets/openforge-logo-reverse.svg?v=premium-wow-51") center / contain no-repeat;
+    background: url("assets/openforge-logo-reverse.svg?v=premium-wow-52") center / contain no-repeat;
     box-shadow: 0 28px 90px rgba(0, 0, 0, 0.42);
     transform: translate(-50%, -50%);
     animation: loader-mark 1200ms ease-in-out infinite;
@@ -2412,6 +2412,23 @@ a:visited {
     line-height: 1;
 }
 
+.project-summary-card {
+    grid-template-rows: auto 1fr auto;
+}
+
+.project-summary-card .testimonial-person > span {
+    width: 3.35rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+}
+
+.project-summary-card > p {
+    margin: 0;
+    color: rgba(245, 245, 247, 0.78);
+    font-size: 1.02rem;
+    line-height: 1.58;
+}
+
 .testimonial-tags {
     display: flex;
     flex-wrap: wrap;
@@ -2761,8 +2778,8 @@ a:visited {
 }
 
 .flagship-hero {
-    min-height: calc(100svh - 48px);
-    padding: 2.45rem 0 2.8rem;
+    min-height: min(100svh, 64rem);
+    padding: 1.5rem 0 2rem;
     color: #f5f5f7;
     background:
         radial-gradient(circle at 73% 34%, rgba(255, 48, 43, 0.22), transparent 31rem),
@@ -2798,23 +2815,23 @@ a:visited {
     position: relative;
     z-index: 2;
     display: grid;
-    grid-template-columns: minmax(35rem, 0.86fr) minmax(42rem, 1.14fr);
-    gap: 5.25rem;
+    grid-template-columns: minmax(39rem, 0.95fr) minmax(39rem, 1.05fr);
+    gap: clamp(2rem, 3.6vw, 4rem);
     align-items: start;
-    min-height: min(46rem, calc(100svh - 6.4rem));
+    min-height: min(38rem, calc(100svh - 9rem));
     min-width: 0;
 }
 
 .flagship-copy {
     min-width: 0;
-    padding-top: clamp(5rem, 8vh, 7rem);
+    padding-top: clamp(2.1rem, 4.8vh, 4.2rem);
 }
 
 .flagship-copy .hero-title {
     max-width: 820px;
     margin: 0;
-    font-size: clamp(4rem, 5vw, 6.2rem);
-    line-height: 0.9;
+    font-size: clamp(3.1rem, 4.1vw, 5rem);
+    line-height: 0.96;
     text-wrap: balance;
 }
 
@@ -2863,7 +2880,7 @@ a:visited {
 
 .flagship-stage {
     position: relative;
-    min-height: 42rem;
+    min-height: 36rem;
     display: grid;
     align-items: center;
     perspective: 1500px;
@@ -3309,6 +3326,29 @@ a:visited {
     background: #fff;
 }
 
+.home-services-section {
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 18% 0%, rgba(255, 48, 43, 0.08), transparent 26rem),
+        linear-gradient(180deg, #fff, #f2f3f6);
+}
+
+.home-services-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background:
+        linear-gradient(90deg, rgba(29, 29, 31, 0.035) 1px, transparent 1px) 0 0 / 84px 84px,
+        linear-gradient(180deg, rgba(29, 29, 31, 0.03) 1px, transparent 1px) 0 0 / 84px 84px;
+}
+
+.home-services-section .container {
+    position: relative;
+    z-index: 1;
+}
+
 .package-grid {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -3347,6 +3387,55 @@ a:visited {
 .package-card b {
     margin-top: auto;
     color: var(--green);
+}
+
+.service-priority-grid {
+    align-items: stretch;
+}
+
+.service-priority-grid .package-card {
+    align-content: stretch;
+    grid-template-rows: auto auto 1fr auto;
+}
+
+.package-card.primary-offer {
+    min-height: 25rem;
+    border-color: rgba(255, 48, 43, 0.24);
+    background:
+        radial-gradient(circle at 76% 8%, rgba(255, 48, 43, 0.18), transparent 34%),
+        linear-gradient(145deg, #121214, #070708);
+    color: rgba(245, 245, 247, 0.76);
+    box-shadow:
+        0 34px 92px rgba(0, 0, 0, 0.24),
+        inset 0 1px 0 rgba(255, 255, 255, 0.14);
+}
+
+.package-card.primary-offer strong {
+    color: #f5f5f7;
+}
+
+.package-card.primary-offer p {
+    color: rgba(245, 245, 247, 0.72);
+}
+
+.package-card.primary-offer span {
+    color: rgba(255, 185, 181, 0.82);
+}
+
+.package-card.primary-offer b {
+    width: max-content;
+    max-width: 100%;
+    border: 1px solid rgba(255, 48, 43, 0.3);
+    border-radius: 999px;
+    padding: 0.5rem 0.7rem;
+    background: rgba(255, 48, 43, 0.12);
+    color: #ffb9b5;
+}
+
+.package-card.care-offer {
+    background:
+        radial-gradient(circle at 76% 8%, rgba(255, 255, 255, 0.12), transparent 32%),
+        linear-gradient(145deg, #191a1d, #09090a);
 }
 
 .report-console,
