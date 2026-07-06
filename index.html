@@ -3,332 +3,207 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="OpenForge builds reliable POS systems, modern websites, and cybersecurity foundations for businesses that can't afford downtime.">
-    <meta property="og:title" content="OpenForge - Enterprise Business Software">
-    <meta property="og:description" content="OpenForge builds reliable POS systems, modern websites, and cybersecurity foundations for businesses that can't afford downtime.">
+    <meta name="description" content="OpenForge helps small businesses secure websites, email accounts, Microsoft 365, Google Workspace, and digital systems without enterprise complexity.">
+    <meta property="og:title" content="OpenForge - Website and Email Security for Small Businesses">
+    <meta property="og:description" content="Premium, practical cybersecurity, website hardening, email security, and monthly care for small businesses.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="assets/og.svg">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="OpenForge - Enterprise Business Software">
-    <meta name="twitter:description" content="OpenForge builds reliable POS systems, modern websites, and cybersecurity foundations for businesses that can't afford downtime.">
+    <meta name="twitter:title" content="OpenForge - Website and Email Security">
+    <meta name="twitter:description" content="Small business website and email security without enterprise complexity.">
     <meta name="twitter:image" content="assets/og.svg">
-
-    <link rel="icon" type="image/png" href="Logo.png">
-    <link rel="apple-touch-icon" href="Logo.png">
-
-    <!-- Google Analytics (replace G-XXXXXXXXXX with your Measurement ID) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-XXXXXXXXXX');
-    </script>
-    <title>OpenForge - Enterprise Business Software</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="assets/openforge-logo.svg?v=premium-wow-51">
+    <link rel="apple-touch-icon" href="assets/openforge-logo.svg?v=premium-wow-51">
+    <title>OpenForge - Website and Email Security for Small Businesses</title>
+    <link rel="stylesheet" href="premium.css?v=premium-wow-51">
 </head>
-<body>
-    <!-- Navigation -->
-    <header class="header">
-        <nav class="nav">
-            <div class="nav-container">
-                <a href="index.html" class="logo">
-                    <img src="Logo.png" alt="OpenForge">
-                </a>
-                <button class="nav-toggle" id="navToggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <ul class="nav-links" id="navLinks">
-                    <li><a href="pos.html">POS</a></li>
-                    <li><a href="web.html">Web</a></li>
-                    <li><a href="security.html">Cybersecurity</a></li>
-                    <li><a href="customers.html">Customers</a></li>
-                    <li><a href="contact.html" class="nav-cta">Contact</a></li>
-                </ul>
-            </div>
+<body data-page="home">
+    <header class="site-header">
+        <nav class="nav" aria-label="Primary navigation">
+            <a class="brand" href="index.html" aria-label="OpenForge home"><img src="assets/openforge-logo-reverse.svg?v=premium-wow-51" alt="OpenForge"><span class="brand-name">OpenForge</span></a>
+            <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-nav-toggle><span></span><span></span><span></span></button>
+            <ul class="nav-links" data-nav-links>
+                <li><a href="index.html" data-nav="home">Home</a></li>
+                <li><a href="security.html" data-nav="security">Security</a></li>
+                <li><a href="monthly-care.html" data-nav="care">Monthly Care</a></li>
+                <li><a href="work.html" data-nav="work">Work</a></li>
+                <li><a href="web.html" data-nav="web">Web</a></li>
+                <li><a href="pos.html" data-nav="pos">POS</a></li>
+                <li><a href="customers.html" data-nav="proof">Reviews</a></li>
+                <li><a href="contact.html" data-nav="contact">Contact</a></li>
+                <li><a class="nav-cta" href="contact.html">Request Review</a></li>
+            </ul>
         </nav>
     </header>
 
-    <!-- Hero -->
-    <section class="hero hero-home">
-        <div class="hero-bg"></div>
-        <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="assets/screenshots/stock.svg" aria-hidden="true">
-            <source src="assets/hero.mp4?v=20251225-premium" type="video/mp4">
-        </video>
-        <div class="container">
-            <div class="hero-grid">
-                <div class="hero-content">
-                    <img class="hero-logo" src="Logo.png" alt="OpenForge" decoding="async" fetchpriority="high">
-                    <div class="hero-pills" aria-label="Services">
-                        <span class="hero-pill">POS</span>
-                        <span class="hero-pill">Web</span>
-                        <span class="hero-pill">Cyber Security</span>
-                    </div>
-                    <h1 class="hero-heading">
-                        <span class="hero-line hero-line-1">Reliable systems.</span>
-                        <span class="hero-line hero-line-2">Clean websites.</span>
-                        <span class="hero-line hero-line-3">Secure foundations.</span>
-                    </h1>
-                    <p class="hero-text">We build POS systems, modern websites, and practical security upgrades for businesses that care about speed, trust, and uptime.</p>
-                    <ul class="hero-highlights" aria-label="Key highlights">
-                        <li>Fast, modern UI</li>
-                        <li>Offline-first POS</li>
-                        <li>Security you can grow into</li>
-                    </ul>
+    <main class="premium-main">
+        <section class="premium-hero flagship-hero">
+            <video class="hero-video hero-video-bg" autoplay muted loop playsinline preload="metadata" poster="assets/openforge-hero-poster.jpg"><source src="assets/openforge-hero-loop.mp4" type="video/mp4"></video>
+            <div class="container flagship-grid">
+                <div class="flagship-copy" data-reveal>
+                    <span class="eyebrow">OpenForge cyber readiness</span>
+                    <h1 class="hero-title"><span>Find exposure.</span><span>Close gaps.</span></h1>
+                    <p class="lead">OpenForge reviews web, email, identity, admin access, and recovery paths, then gives owners a clear security command plan they can execute without enterprise noise.</p>
                     <div class="hero-actions">
-                        <a href="contact.html" class="btn btn-primary">Contact</a>
-                        <a href="web.html#web-pricing" class="btn btn-outline">Website Pricing</a>
+                        <a class="button web-primary-action" href="contact.html">Request security review</a>
+                        <a class="button secondary" href="sample-report.html">View sample report</a>
+                    </div>
+                    <div class="flagship-stats" aria-label="OpenForge proof points">
+                        <span><strong>Identity</strong> MFA, admins, recovery</span>
+                        <span><strong>Email</strong> forwarding and rule review</span>
+                        <span><strong>Web</strong> exposure and launch hygiene</span>
                     </div>
                 </div>
-
-                <div class="hero-media" aria-hidden="true">
-                    <div class="hero-showcase">
-                        <div class="showcase-surface">
-                            <div class="showcase-main">
-                                <div class="showcase-badge-row">Operational clarity</div>
-                                <div class="showcase-frame">
-                                    <img src="assets/screenshots/stock.svg" alt="" loading="lazy" decoding="async">
+                <div class="flagship-stage" aria-label="OpenForge work preview" data-reveal>
+                    <div class="stage-browser siem-browser">
+                        <div class="browser-chrome"><span class="browser-dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="browser-url">openforge / exposure-command</span><span class="browser-status">Threat view</span></div>
+                        <div class="siem-console">
+                            <div class="siem-panel siem-score">
+                                <span>Exposure index</span>
+                                <strong>04</strong>
+                                <b>Priority fixes</b>
+                            </div>
+                            <div class="siem-panel siem-feed">
+                                <span>Active findings</span>
+                                <div><i class="level-high"></i><strong>Admin MFA gap</strong><b>High</b></div>
+                                <div><i></i><strong>Mailbox forwarding</strong><b>Review</b></div>
+                                <div><i></i><strong>Rule anomaly</strong><b>Review</b></div>
+                                <div><i class="level-low"></i><strong>Recovery owner</strong><b>Assign</b></div>
+                            </div>
+                            <div class="siem-panel siem-path">
+                                <span>Exposure path</span>
+                                <div class="path-map" aria-hidden="true">
+                                    <i></i><i></i><i></i><i></i>
+                                    <svg viewBox="0 0 420 170" focusable="false"><path d="M42 118 C92 68 132 72 178 96 S276 146 340 54"></path><path class="pulse" d="M42 118 C92 68 132 72 178 96 S276 146 340 54"></path></svg>
                                 </div>
                             </div>
-                            <div class="showcase-strip">
-                                <div class="showcase-mini">
-                                    <div class="showcase-mini-badge">Web</div>
-                                    <img src="assets/screenshots/web-launch.svg" alt="" loading="lazy" decoding="async">
-                                </div>
-                                <div class="showcase-mini">
-                                    <div class="showcase-mini-badge">Security</div>
-                                    <img src="assets/screenshots/security-siem.svg" alt="" loading="lazy" decoding="async">
-                                </div>
+                            <div class="siem-panel siem-health">
+                                <span>Detection rhythm</span>
+                                <div class="health-line mini-health" aria-hidden="true"><svg viewBox="0 0 320 72" focusable="false"><path d="M0 38 H58 L72 38 L84 14 L105 58 L126 30 L146 38 H194 L210 38 L224 24 L241 48 L260 38 H320"></path></svg></div>
                             </div>
                         </div>
-
-                        <div class="showcase-kpis">
-                            <div class="showcase-kpi"><strong>POS</strong><span>Fast billing + reliable stock.</span></div>
-                            <div class="showcase-kpi"><strong>Web</strong><span>Premium site that converts.</span></div>
-                            <div class="showcase-kpi"><strong>Security</strong><span>Hardening + monitoring path.</span></div>
-                        </div>
+                    </div>
+                    <div class="stage-report">
+                        <span>Security command</span>
+                        <strong>Fix order ready</strong>
+                        <div class="health-line mini-health" aria-hidden="true"><svg viewBox="0 0 220 46" focusable="false"><path d="M0 24 H42 L55 24 L66 8 L82 38 L100 21 L119 25 H146 L158 15 L173 33 L188 24 H220"></path></svg></div>
+                    </div>
+                    <div class="stage-stack">
+                        <span>Identity</span><span>Email</span><span>Website</span><span>Recovery</span>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Home Overview -->
-    <section class="home-overview" aria-label="What OpenForge does">
+        <section class="strike-platform-section">
+            <div class="container">
+                <div class="strike-platform-head" data-reveal>
+                    <span>OpenForge readiness layer</span>
+                    <h2>Four surfaces attackers love. One clear fix order for owners.</h2>
+                </div>
+                <div class="strike-module-grid">
+                    <article data-reveal><span>01</span><strong>Identity &amp; MFA</strong><p>Admin accounts, shared access, recovery users, MFA enforcement, and sign-in risk.</p></article>
+                    <article data-reveal><span>02</span><strong>Email Exposure</strong><p>Forwarding rules, mailbox persistence, Google Workspace or Microsoft 365 ownership.</p></article>
+                    <article data-reveal><span>03</span><strong>Web Attack Surface</strong><p>HTTPS, security headers, public admin paths, DNS ownership, platform hygiene.</p></article>
+                    <article data-reveal><span>04</span><strong>Owner Report</strong><p>Business-readable priorities, provider tasks, technical evidence, and next actions.</p></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section white home-reel-section">
+            <div class="container">
+                <div class="section-head" data-reveal>
+                    <span class="kicker">Work reel</span>
+                    <h2 class="section-title">Show the work before asking for trust.</h2>
+                    <p class="section-copy">A premium cybersecurity site needs visible proof: demos, reports, reviews, systems thinking, and clear packages.</p>
+                </div>
+                <div class="demo-grid">
+                    <article class="demo-card featured-demo" data-reveal>
+                        <div class="demo-media"><video controls muted playsinline preload="metadata" poster="assets/screenshots/demo-2.jpg"><source src="assets/demo-2-web.mp4" type="video/mp4"><source src="assets/demo-2.mp4" type="video/mp4"></video></div>
+                        <div class="demo-meta"><span>Website demo</span><h3>Premium launch surface</h3><p>A real browser-style page flow with offer, proof, contact path, and launch-readiness framing.</p><a class="inline-link" href="work.html">Open demos</a></div>
+                    </article>
+                    <article class="demo-card" data-reveal>
+                        <div class="demo-media"><video controls muted playsinline preload="metadata" poster="assets/screenshots/demo-1.jpg"><source src="assets/demo-1-web.mp4" type="video/mp4"><source src="assets/demo-1.mp4" type="video/mp4"></video></div>
+                        <div class="demo-meta"><span>Mobile pass</span><h3>Responsive polish</h3><p>Portrait flow, readable rhythm, and touch-friendly page movement.</p></div>
+                    </article>
+                    <article class="demo-card" data-reveal>
+                        <div class="demo-media"><video controls muted playsinline preload="metadata" poster="assets/screenshots/demo-3.jpg"><source src="assets/demo-3-web.mp4" type="video/mp4"><source src="assets/demo-3.mp4" type="video/mp4"></video></div>
+                        <div class="demo-meta"><span>System surface</span><h3>Operational UX</h3><p>Calm interface structure for business systems and service workflows.</p></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section trusted-reviews-section">
+            <div class="container">
+                <div class="section-head" data-reveal>
+                    <span class="kicker">Customer proof</span>
+                    <h2 class="section-title">Trusted by operators, MSPs, and engineering teams.</h2>
+                    <p class="section-copy">Named feedback across SIEM deployment, MSP migration, managed security operations, detection engineering, and POS integration.</p>
+                </div>
+                <div class="testimonial-grid compact">
+                    <article class="testimonial-card" data-reveal><div class="testimonial-person"><span>V</span><div><strong>Victor</strong><p>Engineering Lead, India</p></div></div><blockquote>"Needed Wazuh deployment done right. Clear scope, realistic timeline, and hands-on knowledge transfer."</blockquote><div class="testimonial-tags"><span>Wazuh SIEM</span><span>Knowledge transfer</span></div></article>
+                    <article class="testimonial-card" data-reveal><div class="testimonial-person"><span>B</span><div><strong>Brian Brown</strong><p>MSP Director, USA</p></div></div><blockquote>"Structured approach, playbooks included. Exactly what an MSP needs to scale securely."</blockquote><div class="testimonial-tags"><span>EDR/ITDR/SIEM</span><span>MSP architecture</span></div></article>
+                    <article class="testimonial-card" data-reveal><div class="testimonial-person"><span>Z</span><div><strong>Zachary Moore</strong><p>MXDR365</p></div></div><blockquote>"Live SOC operations, cloud identity threat detection, and fast decision-making in high-visibility environments."</blockquote><div class="testimonial-tags"><span>24x7 SOC</span><span>Defender XDR</span></div></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section case-study-section">
+            <div class="container">
+                <div class="section-head" data-reveal>
+                    <span class="kicker">Case study patterns</span>
+                    <h2 class="section-title">Less theatre. More outcomes.</h2>
+                </div>
+                <div class="case-study-grid">
+                    <article class="case-study-card" data-reveal><span>Security deployment</span><h3>Wazuh SIEM that a team could actually own.</h3><p>Clear scope, practical transfer, and a deployment path that avoided mystery maintenance.</p><dl><div><dt>Problem</dt><dd>Needed SIEM coverage without confusing handoff.</dd></div><div><dt>Result</dt><dd>Team confident running it solo.</dd></div></dl></article>
+                    <article class="case-study-card" data-reveal><span>MSP migration</span><h3>Phased Huntress + Defender migration across 350+ endpoints.</h3><p>Structured rollout with playbooks and architecture fit for multiple customers.</p><dl><div><dt>Problem</dt><dd>Scale security services across customer endpoints.</dd></div><div><dt>Result</dt><dd>Repeatable MSP operating pattern.</dd></div></dl></article>
+                    <article class="case-study-card" data-reveal><span>Retail systems</span><h3>POS integration tuned for peak-hour operations.</h3><p>Fast checkout workflows, sales visibility, inventory insight, and smoother retail handling.</p><dl><div><dt>Problem</dt><dd>Operational data stuck in slow workflows.</dd></div><div><dt>Result</dt><dd>Real-time sales and inventory visibility.</dd></div></dl></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section white packages-section">
+            <div class="container">
+                <div class="section-head" data-reveal>
+                    <span class="kicker">Engagement types</span>
+                    <h2 class="section-title">Pick the surface that needs to become sharper.</h2>
+                    <p class="section-copy">Not generic pricing cards: clear ways to start depending on what is weakest today.</p>
+                </div>
+                <div class="package-grid">
+                    <a class="package-card" href="security.html" data-reveal><span>01</span><strong>Security Health Check</strong><p>Website, email, admin access, recovery, and owner-ready report.</p><b>From LKR 25,000</b></a>
+                    <a class="package-card" href="monthly-care.html" data-reveal><span>02</span><strong>Monthly Security Care</strong><p>Recurring hygiene, review rhythm, and practical priority guidance.</p><b>From LKR 35,000/month</b></a>
+                    <a class="package-card" href="web.html" data-reveal><span>03</span><strong>Premium Web Build</strong><p>Business pages with UX, demo proof, launch hygiene, and security-aware handoff.</p><b>Scoped build</b></a>
+                    <a class="package-card" href="pos.html" data-reveal><span>04</span><strong>POS / Operational System</strong><p>Stock, sales, checkout, reports, roles, backups, and stability planning.</p><b>Scoped system</b></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section dark report-teaser-section">
+            <div class="container feature-row reverse">
+                <div class="report-console" data-reveal>
+                    <div class="console-head"><span></span><strong>Sample report console</strong><b>Owner ready</b></div>
+                    <div class="launch-row"><span>High</span><strong>Administrator MFA is not enforced.</strong><b>Fix first</b></div>
+                    <div class="launch-row"><span>Medium</span><strong>Website headers and mailbox rules need review.</strong><b>Plan</b></div>
+                    <div class="launch-row"><span>Action</span><strong>Owner, provider, and technical next steps are separated.</strong><b>Clear</b></div>
+                </div>
+                <div class="feature-copy" data-reveal><span class="kicker">Sample report</span><h2>The report is part of the product.</h2><p class="quiet">A premium cybersecurity website should prove the quality of the deliverable. The sample report now reads like something a business owner can use.</p><div class="hero-actions"><a class="button" href="sample-report.html">View report</a><a class="button secondary" href="contact.html">Request review</a></div></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
         <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Overview</span>
-                <h2 class="section-heading">One brand. Three outcomes.</h2>
-                <p class="section-text">Everything we offer is designed around speed, trust, and uptime.</p>
+            <div class="footer-grid">
+                <div class="footer-brand"><img src="assets/openforge-logo.svg?v=premium-wow-51" alt="OpenForge"><strong>OpenForge</strong><p>Website &amp; Email Security for Small Businesses.</p><div class="safety-note">Authorized checks only. Clear written scope, confidential handling, and NDA available if required.</div></div>
+                <div class="footer-col"><strong>Services</strong><a href="security.html">Security Health Check</a><a href="monthly-care.html">Monthly Security Care</a><a href="work.html">Work &amp; Demos</a><a href="web.html">Web Development</a><a href="pos.html">POS Systems</a></div>
+                <div class="footer-col"><strong>Reviews</strong><a href="customers.html">Customer Reviews</a><a href="sample-report.html">Sample Security Report</a><a href="contact.html">Contact</a></div>
+                <div class="footer-col"><strong>Contact</strong><a href="mailto:contact@getopenforge.net">contact@getopenforge.net</a><a href="https://wa.me/94778177435" target="_blank" rel="noopener">+94 77 81 77 435</a></div>
             </div>
-
-            <div class="home-spotlights" role="list">
-                <article class="home-spotlight" role="listitem" aria-label="POS spotlight" style="--spotlight-index: 0;">
-                    <div class="spotlight-accent"></div>
-                    <div class="home-spotlight-head">
-                        <div class="home-spotlight-icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M20 6L9 17l-5-5"/>
-                            </svg>
-                        </div>
-                        <div>
-                            <h3 class="home-spotlight-title">POS systems</h3>
-                            <p class="home-spotlight-text">Offline-first billing, real-time stock, and reporting that stays accurate.</p>
-                        </div>
-                    </div>
-                    <ul class="home-spotlight-list">
-                        <li><strong>Fast counter billing:</strong> Sub-100ms transactions, even on weak networks</li>
-                        <li><strong>Inventory trust:</strong> Real-time sync with automatic reconciliation</li>
-                        <li><strong>Backup-safe ops:</strong> Offline-first design means zero downtime</li>
-                    </ul>
-                    <div class="home-spotlight-actions">
-                        <a class="btn btn-primary" href="pos.html">Explore POS</a>
-                        <a class="btn btn-outline" href="pos.html#pricing">POS Pricing</a>
-                    </div>
-                    <div class="spotlight-glow"></div>
-                </article>
-
-                <article class="home-spotlight" role="listitem" aria-label="Web spotlight" style="--spotlight-index: 1;">
-                    <div class="spotlight-accent"></div>
-                    <div class="home-spotlight-head">
-                        <div class="home-spotlight-icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <rect x="3" y="3" width="18" height="18" rx="2"/>
-                                <path d="M3 9h18"/>
-                            </svg>
-                        </div>
-                        <div>
-                            <h3 class="home-spotlight-title">Web development</h3>
-                            <p class="home-spotlight-text">Premium websites that load fast, look modern, and guide visitors to action.</p>
-                        </div>
-                    </div>
-                    <ul class="home-spotlight-list">
-                        <li><strong>Mobile-first:</strong> Built for phones, tablets, and desktop seamlessly</li>
-                        <li><strong>SEO optimized:</strong> Core vitals + structured data + performance</li>
-                        <li><strong>Conversion focused:</strong> Clear CTAs, user journeys, analytics built-in</li>
-                    </ul>
-                    <div class="home-spotlight-actions">
-                        <a class="btn btn-primary" href="web.html">Explore Web</a>
-                        <a class="btn btn-outline" href="web.html#web-pricing">Website Pricing</a>
-                    </div>
-                    <div class="spotlight-glow"></div>
-                </article>
-
-                <article class="home-spotlight" role="listitem" aria-label="Security spotlight" style="--spotlight-index: 2;">
-                    <div class="spotlight-accent"></div>
-                    <div class="home-spotlight-head">
-                        <div class="home-spotlight-icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M12 2l7 4v6c0 5-3 9-7 10-4-1-7-5-7-10V6l7-4z"/>
-                            </svg>
-                        </div>
-                        <div>
-                            <h3 class="home-spotlight-title">Cyber security</h3>
-                            <p class="home-spotlight-text">Practical hardening now, and a roadmap to SIEM monitoring later.</p>
-                        </div>
-                    </div>
-                    <ul class="home-spotlight-list">
-                        <li><strong>Access controls:</strong> MFA, least-privilege roles, audit trails</li>
-                        <li><strong>Resilience first:</strong> Backup/restore testing, incident playbooks</li>
-                        <li><strong>Visibility roadmap:</strong> Detection engineering + SIEM foundations</li>
-                    </ul>
-                    <div class="home-spotlight-actions">
-                        <a class="btn btn-primary" href="security.html">Explore Security</a>
-                        <a class="btn btn-outline" href="security.html#roadmap">Roadmap</a>
-                    </div>
-                    <div class="spotlight-glow"></div>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- Trust -->
-    <section id="trust" class="trust-section" aria-label="Trust and reliability">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Trust</span>
-                <h2 class="section-heading">Built for long-term reliability</h2>
-                <p class="section-text">No lock-in. No fragile shortcuts. Just clean engineering and practical outcomes.</p>
-            </div>
-
-            <div class="trust-grid">
-                <div class="trust-item">
-                    <h3>Operational first</h3>
-                    <p>Designed for uptime and daily workflows.</p>
-                </div>
-                <div class="trust-item">
-                    <h3>Security mindset</h3>
-                    <p>Least privilege, auditability, resilience.</p>
-                </div>
-                <div class="trust-item">
-                    <h3>Fast delivery</h3>
-                    <p>Clear scope, clean execution, on time.</p>
-                </div>
-                <div class="trust-item">
-                    <h3>Simple ownership</h3>
-                    <p>You own your systems and domain.</p>
-                </div>
-            </div>
-
-            <div class="engineer-line">
-                <p>OpenForge is built by an engineer focused on reliability, security, and long-term maintainability — not shortcuts.</p>
-                <p class="engineer-sub">Want a demo or a quote? We keep it clear and simple.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Quick Pricing Links -->
-    <section class="home-pricing" aria-label="Pricing shortcuts">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Pricing</span>
-                <h2 class="section-heading">Get pricing fast</h2>
-                <p class="section-text">Jump straight to the pricing section for the service you want.</p>
-            </div>
-
-            <div class="home-pricing-grid" role="list">
-                <a class="home-pricing-card" role="listitem" href="pos.html#pricing" aria-label="POS pricing">
-                    <div class="home-pricing-title">POS Pricing</div>
-                    <div class="home-pricing-sub">One-time setup + optional support</div>
-                </a>
-                <a class="home-pricing-card" role="listitem" href="web.html#web-pricing" aria-label="Website pricing">
-                    <div class="home-pricing-title">Website Pricing</div>
-                    <div class="home-pricing-sub">New sites and upgrades</div>
-                </a>
-                <a class="home-pricing-card" role="listitem" href="contact.html#demo" aria-label="Request a quote">
-                    <div class="home-pricing-title">Request a Quote</div>
-                    <div class="home-pricing-sub">Email or WhatsApp in 2 minutes</div>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Final CTA -->
-    <section class="home-cta" aria-label="Contact call to action">
-        <div class="container">
-            <div class="home-cta-card">
-                <div class="home-cta-copy">
-                    <h2 class="home-cta-title">Ready to move faster?</h2>
-                    <p class="home-cta-text">Tell us what you need. We’ll respond with clear next steps and a rough quote range.</p>
-                </div>
-                <div class="home-cta-actions">
-                    <a class="btn btn-primary" href="contact.html#demo">Contact</a>
-                    <a class="btn btn-outline" href="https://wa.me/94778177435" target="_blank" rel="noopener">WhatsApp</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-top">
-                <div class="footer-brand">
-                    <img src="Logo.png" alt="OpenForge" class="footer-logo">
-                    <p>Reliable systems, clean websites, secure foundations.</p>
-                    <div class="footer-ctas" aria-label="Contact links">
-                        <a class="footer-pill" href="https://wa.me/94778177435" target="_blank" rel="noopener">WhatsApp</a>
-                        <a class="footer-pill" href="mailto:contact@getopenforge.net?subject=OpenForge%20Demo%20Request">Email</a>
-                        <a class="footer-pill" href="https://www.upwork.com/freelancers/~01278f31a6af00dd21?mp_source=share" target="_blank" rel="noopener">Hire on Upwork</a>
-                    </div>
-                </div>
-
-                <div class="footer-columns" aria-label="Footer navigation">
-                    <div class="footer-col">
-                        <div class="footer-col-title">Explore</div>
-                        <div class="footer-col-links">
-                            <a href="pos.html">POS</a>
-                            <a href="web.html">Web</a>
-                            <a href="security.html">Cybersecurity</a>
-                        </div>
-                    </div>
-
-                    <div class="footer-col">
-                        <div class="footer-col-title">Pricing</div>
-                        <div class="footer-col-links">
-                            <a href="pos.html#pricing">POS Pricing</a>
-                            <a href="web.html#web-pricing">Website Pricing</a>
-                        </div>
-                    </div>
-
-                    <div class="footer-col">
-                        <div class="footer-col-title">Contact</div>
-                        <div class="footer-col-links">
-                            <a href="contact.html">Request a Demo</a>
-                            <a href="https://wa.me/94778177435" target="_blank" rel="noopener">+94 77 81 77 435</a>
-                            <a href="mailto:contact@getopenforge.net?subject=OpenForge%20Demo%20Request">contact@getopenforge.net</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 OpenForge. All rights reserved.</p>
-            </div>
+            <div class="footer-bottom"><span>&copy; 2026 OpenForge. All rights reserved.</span><span>Privacy note: findings are handled confidentially.</span></div>
         </div>
     </footer>
-
-    <script src="script.js"></script>
+    <script src="script.js?v=premium-wow-51"></script>
+    <script type="module" src="openforge-scene.js?v=premium-wow-51"></script>
 </body>
 </html>

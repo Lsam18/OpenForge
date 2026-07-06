@@ -3,517 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="OpenForge Cybersecurity — SIEM, cloud security, and security operations for startups, MSPs, and SaaS teams.">
-    <meta property="og:title" content="OpenForge Cybersecurity">
-    <meta property="og:description" content="SIEM, cloud security architecture, and security operations.">
+    <meta name="description" content="Website and email Security Health Check for small businesses using Microsoft 365, Google Workspace, WordPress, or custom websites.">
+    <meta property="og:title" content="OpenForge Security Health Check">
+    <meta property="og:description" content="A clear website and email security review for small businesses.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="assets/og.svg">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="OpenForge Cybersecurity">
-    <meta name="twitter:description" content="SIEM, cloud security architecture, and security operations.">
+    <meta name="twitter:title" content="OpenForge Security Health Check">
+    <meta name="twitter:description" content="Website and email security review with practical fixes.">
     <meta name="twitter:image" content="assets/og.svg">
-
-    <link rel="icon" type="image/png" href="Logo.png">
-    <link rel="apple-touch-icon" href="Logo.png">
-
-    <!-- Google Analytics (replace G-XXXXXXXXXX with your Measurement ID) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);} 
-        gtag('js', new Date());
-        gtag('config', 'G-XXXXXXXXXX');
-    </script>
-
-    <title>OpenForge Cybersecurity</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="assets/openforge-logo.svg?v=premium-wow-51">
+    <link rel="apple-touch-icon" href="assets/openforge-logo.svg?v=premium-wow-51">
+    <title>Security Health Check - OpenForge</title>
+    <link rel="stylesheet" href="premium.css?v=premium-wow-51">
 </head>
-<body>
-    <!-- Navigation -->
-    <header class="header">
-        <nav class="nav">
-            <div class="nav-container">
-                <a href="index.html" class="logo">
-                    <img src="Logo.png" alt="OpenForge">
-                </a>
-                <button class="nav-toggle" id="navToggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <ul class="nav-links" id="navLinks">
-                    <li><a href="pos.html">POS</a></li>
-                    <li><a href="web.html">Web</a></li>
-                    <li><a href="security.html">Cybersecurity</a></li>
-                    <li><a href="customers.html">Customers</a></li>
-                    <li><a href="contact.html" class="nav-cta">Contact</a></li>
-                </ul>
-            </div>
+<body data-page="security">
+    <header class="site-header">
+        <nav class="nav" aria-label="Primary navigation">
+            <a class="brand" href="index.html" aria-label="OpenForge home"><img src="assets/openforge-logo-reverse.svg?v=premium-wow-51" alt="OpenForge"><span class="brand-name">OpenForge</span></a>
+            <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-nav-toggle><span></span><span></span><span></span></button>
+            <ul class="nav-links" data-nav-links>
+                <li><a href="index.html" data-nav="home">Home</a></li>
+                <li><a href="security.html" data-nav="security">Security</a></li>
+                <li><a href="monthly-care.html" data-nav="care">Monthly Care</a></li>
+                <li><a href="work.html" data-nav="work">Work</a></li>
+                <li><a href="web.html" data-nav="web">Web</a></li>
+                <li><a href="pos.html" data-nav="pos">POS</a></li>
+                <li><a href="customers.html" data-nav="proof">Reviews</a></li>
+                <li><a href="contact.html" data-nav="contact">Contact</a></li>
+                <li><a class="nav-cta" href="contact.html">Request Review</a></li>
+            </ul>
         </nav>
     </header>
 
-    <!-- Hero -->
-    <section class="hero hero-security">
-        <div class="hero-bg"></div>
-        <div class="container">
-            <div class="hero-grid">
-                <div class="hero-content">
-                    <img class="hero-logo" src="Logo.png" alt="OpenForge">
-                    <h1 class="hero-heading">
-                        <span class="hero-line">SIEM, cloud security, and security operations</span>
-                    </h1>
-                    <p class="hero-text">For startups, MSPs, and SaaS teams that need security detection, architecture, and operational clarity.</p>
+    <main class="premium-main">
+        <section class="premium-hero split-hero dark security-hero">
+            <div class="container hero-split-grid">
+                <div class="hero-copy">
+                    <span class="eyebrow">Security Health Check</span>
+                    <h1 class="page-title">Know what is exposed before it becomes urgent.</h1>
+                    <p class="lead">A focused review of website exposure, email posture, admin access, and recovery readiness. The output is calm, readable, and built for action.</p>
                     <div class="hero-actions">
-                        <a class="btn btn-primary" href="contact.html#demo">Start a conversation</a>
-                        <a class="btn btn-outline" href="contact.html">Contact</a>
+                        <a class="button" href="contact.html">Request free mini review</a>
+                        <a class="button secondary" href="sample-report.html">View sample report</a>
                     </div>
                 </div>
+                <div class="hero-visual" aria-label="Security review visual">
+                    <div class="premium-scene" aria-hidden="true"></div>
+                    <div class="hero-product">
+                        <video class="hero-video product-video" autoplay muted loop playsinline preload="metadata" poster="assets/openforge-hero-poster.jpg"><source src="assets/openforge-hero-loop.mp4" type="video/mp4"></video>
+                        <div class="hero-card"><span>Health Check</span><strong>Four exposed surfaces, one priority order.</strong><p>Website, email, admin access, and recovery are reviewed as one business system.</p><div class="ui-lines"><i></i><i></i><i></i></div></div>
+                        <div class="hero-stat"><span>First fix</span><strong>Admin MFA</strong><b>High impact</b></div>
+                        <div class="hero-slab"><span>Report output</span><strong>Evidence, business impact, next action.</strong><p>Written for owners, developers, and providers to move without guesswork.</p></div>
+                        <div class="hero-mini-grid"><span></span><span></span><span></span></div>
+                        <div class="health-line product-health-line" aria-hidden="true"><svg viewBox="0 0 320 72" focusable="false"><path d="M0 38 H58 L72 38 L84 14 L105 58 L126 30 L146 38 H194 L210 38 L224 24 L241 48 L260 38 H320"></path></svg></div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                <div class="hero-media" aria-hidden="true">
-                    <div class="hero-showcase">
-                        <div class="showcase-surface">
-                            <div class="showcase-main">
-                                <div class="showcase-badge-row">Security Operations</div>
-                                <div class="showcase-frame">
-                                    <img src="assets/screenshots/security-siem.svg" alt="SIEM dashboards" loading="lazy">
-                                </div>
-                            </div>
-                            <div class="showcase-strip">
-                                <div class="showcase-mini">
-                                    <div class="showcase-mini-badge">SIEM</div>
-                                    <img src="assets/screenshots/security-siem.svg" alt="" loading="lazy">
-                                </div>
-                                <div class="showcase-mini">
-                                    <div class="showcase-mini-badge">Cloud</div>
-                                    <img src="assets/screenshots/stock.svg" alt="" loading="lazy">
-                                </div>
-                            </div>
-                        </div>
+        <section class="section white">
+            <div class="container">
+                <div class="section-head">
+                    <span class="kicker">Review surfaces</span>
+                    <h2 class="section-title">The dull gaps attackers actually use.</h2>
+                    <p class="section-copy">OpenForge looks for the practical configuration and ownership issues that hide in normal business systems.</p>
+                </div>
+                <div class="tile-grid">
+                    <article class="tile"><span>Mail</span><strong>MFA and forwarding gaps</strong><p>Admin protection, recovery options, mailbox forwarding, and suspicious settings.</p></article>
+                    <article class="tile"><span>Web</span><strong>Exposed admin surface</strong><p>SSL, headers, public login paths, plugin posture, and backup ownership.</p></article>
+                    <article class="tile"><span>Identity</span><strong>Shared or stale access</strong><p>Old users, broad permissions, shared credentials, and unclear ownership.</p></article>
+                    <article class="tile"><span>Recovery</span><strong>Weak fallback paths</strong><p>What the business does when email, DNS, hosting, or a key workflow fails.</p></article>
+                </div>
+            </div>
+        </section>
 
-                        <div class="showcase-kpis">
-                            <div class="showcase-kpi"><strong>Detection</strong><span>Real alerts, less noise.</span></div>
-                            <div class="showcase-kpi"><strong>Response</strong><span>Playbooks & runbooks.</span></div>
-                            <div class="showcase-kpi"><strong>Identity</strong><span>Secure by default.</span></div>
+        <section class="section">
+            <div class="container feature-row">
+                <div class="feature-copy">
+                    <span class="kicker">Deliverable</span>
+                    <h2>The report is the product.</h2>
+                    <p>Findings are risk-rated, evidence-backed, and written for owners, developers, and providers to act on without decoding security jargon.</p>
+                    <div class="hero-actions"><a class="button secondary" href="sample-report.html">Open sample report</a></div>
+                </div>
+                <div class="report-preview">
+                    <div class="report-sheet">
+                        <h3>Finding Summary</h3>
+                        <div class="report-lines">
+                            <div class="report-line"><span>High</span><strong>Administrator MFA is not enforced</strong><b class="badge high">Fix first</b></div>
+                            <div class="report-line"><span>Medium</span><strong>Website headers need hardening</strong><b class="badge medium">Plan</b></div>
+                            <div class="report-line"><span>Medium</span><strong>Mailbox rules require review</strong><b class="badge medium">Verify</b></div>
+                            <div class="report-line"><span>Low</span><strong>Recovery ownership is unclear</strong><b class="badge">Assign</b></div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Services -->
-    <section id="services" class="sec-services" aria-label="Services">
+        <section class="section white">
+            <div class="container">
+                <div class="section-head">
+                    <span class="kicker">Pricing</span>
+                    <h2 class="section-title">Choose the right depth.</h2>
+                </div>
+                <div class="price-list">
+                    <a class="price-row" href="contact.html"><span>Free Mini Review<strong>One-page visible posture snapshot.</strong></span><b>Free</b></a>
+                    <a class="price-row" href="contact.html"><span>Security Health Check<strong>Core website, email, admin access, and recovery review.</strong></span><b>LKR 25,000</b></a>
+                    <a class="price-row" href="contact.html"><span>Business Security Review<strong>Expanded review for more systems or higher risk.</strong></span><b>LKR 50,000</b></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
         <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Services</span>
-                <h2 class="section-heading">What we deliver</h2>
+            <div class="footer-grid">
+                <div class="footer-brand"><img src="assets/openforge-logo.svg?v=premium-wow-51" alt="OpenForge"><strong>OpenForge</strong><p>Website &amp; Email Security for Small Businesses.</p><div class="safety-note">Authorized checks only. Clear written scope, confidential handling, and NDA available if required.</div></div>
+                <div class="footer-col"><strong>Services</strong><a href="security.html">Security Health Check</a><a href="monthly-care.html">Monthly Security Care</a><a href="work.html">Work &amp; Demos</a><a href="web.html">Web Development</a><a href="pos.html">POS Systems</a></div>
+                <div class="footer-col"><strong>Reviews</strong><a href="customers.html">Customer Reviews</a><a href="sample-report.html">Sample Security Report</a><a href="contact.html">Contact</a></div>
+                <div class="footer-col"><strong>Contact</strong><a href="mailto:contact@getopenforge.net">contact@getopenforge.net</a><a href="https://wa.me/94778177435" target="_blank" rel="noopener">+94 77 81 77 435</a></div>
             </div>
-
-            <div class="services-grid">
-                <article class="sec-service-card" style="--card-index: 0;">
-                    <div class="card-accent"></div>
-                    <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                        <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
-                    </svg>
-                    <h3>SIEM &amp; Detection</h3>
-                    <p class="card-intro">We design and deploy Sentinel, Splunk, or ELK architectures that fit your scale. Real alerts from day one, tuned to your environment and threat model.</p>
-                    <div class="card-details">
-                        <div class="detail-item">
-                            <span class="detail-label">Tools:</span>
-                            <span class="detail-value">Sentinel, Splunk Enterprise, ELK Stack, AWS Security Hub</span>
-                        </div>
-                        <div class="detail-item">
-                            <span class="detail-label">Deliverables:</span>
-                            <span class="detail-value">Architecture design, data ingestion, detection rules, correlation logic, tuning</span>
-                        </div>
-                        <div class="detail-item">
-                            <span class="detail-label">Outcome:</span>
-                            <span class="detail-value">Reduce alert noise by 60%+. Real signal by week 2.</span>
-                        </div>
-                    </div>
-                    <div class="card-glow"></div>
-                </article>
-                <article class="sec-service-card" style="--card-index: 1;">
-                    <div class="card-accent"></div>
-                    <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                        <circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/><circle cx="5" cy="12" r="1"/><path d="M12 19v-6m0 0V5M9 8l-6 4m0 0v4m6-4l6-4m0 0v4M15 8l6-4"/>
-                    </svg>
-                    <h3>Security Operations</h3>
-                    <p class="card-intro">Build triage workflows and runbooks that operators actually follow. Alert routing, escalation logic, and playbooks reduce noise and cut response time.</p>
-                    <div class="card-details">
-                        <div class="detail-item">
-                            <span class="detail-label">Coverage:</span>
-                            <span class="detail-value">Triage workflows, playbook automation, escalation, on-call rotations</span>
-                        </div>
-                        <div class="detail-item">
-                            <span class="detail-label">Includes:</span>
-                            <span class="detail-value">Alert tuning, false positive reduction, response optimization, training</span>
-                        </div>
-                        <div class="detail-item">
-                            <span class="detail-label">Impact:</span>
-                            <span class="detail-value">Cut MTTR by 50%. Team handles 3x more alerts with same headcount.</span>
-                        </div>
-                    </div>
-                    <div class="card-glow"></div>
-                </article>
-                <article class="sec-service-card" style="--card-index: 2;">
-                    <div class="card-accent"></div>
-                    <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                        <rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/>
-                    </svg>
-                    <h3>Identity Hardening</h3>
-                    <p class="card-intro">MFA enforcement, Conditional Access policies, least-privilege role design. Whether Azure AD or AWS IAM, we architect identity for zero-trust.</p>
-                    <div class="card-details">
-                        <div class="detail-item">
-                            <span class="detail-label">Configuration:</span>
-                            <span class="detail-value">MFA enforcement, passwordless auth, risk-based access, device compliance</span>
-                        </div>
-                        <div class="detail-item">
-                            <span class="detail-label">Scope:</span>
-                            <span class="detail-value">Azure AD, AWS IAM, GCP IAM, app-level controls, audit &amp; remediation</span>
-                        </div>
-                        <div class="detail-item">
-                            <span class="detail-label">Result:</span>
-                            <span class="detail-value">Eliminate shared accounts. Zero compromised credentials in 90 days.</span>
-                        </div>
-                    </div>
-                    <div class="card-glow"></div>
-                </article>
-                <article class="sec-service-card" style="--card-index: 3;">
-                    <div class="card-accent"></div>
-                    <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/><path d="M12 9v6m-3-3h6"/>
-                    </svg>
-                    <h3>Cloud Security</h3>
-                    <p class="card-intro">Azure Resource Manager policies, AWS security groups, infrastructure-as-code guardrails. Baselines for compliance, automated scanning, remediation.</p>
-                    <div class="card-details">
-                        <div class="detail-item">
-                            <span class="detail-label">Platforms:</span>
-                            <span class="detail-value">Azure (subscription policy, RBAC), AWS (SCPs, security config, IAM), GCP</span>
-                        </div>
-                        <div class="detail-item">
-                            <span class="detail-label">Enforcement:</span>
-                            <span class="detail-value">Network segmentation, encryption at rest/transit, patch scanning, CIS benchmarks</span>
-                        </div>
-                        <div class="detail-item">
-                            <span class="detail-label">Benefit:</span>
-                            <span class="detail-value">No more manual compliance checks. Secure by default in every environment.</span>
-                        </div>
-                    </div>
-                    <div class="card-glow"></div>
-                </article>
-                <article class="sec-service-card" style="--card-index: 4;">
-                    <div class="card-accent"></div>
-                    <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                        <path d="M12 2v20M2 12h20M6 6l12 12M18 6l-12 12"/>
-                    </svg>
-                    <h3>Incident Readiness</h3>
-                    <p class="card-intro">Detection engineering tuned to your threat model. Tabletop exercises, runbook validation, on-call playbooks so your team is ready.</p>
-                    <div class="card-details">
-                        <div class="detail-item">
-                            <span class="detail-label">Detection:</span>
-                            <span class="detail-value">Threat modeling, attack simulation, detection rules, sigma rules engineering</span>
-                        </div>
-                        <div class="detail-item">
-                            <span class="detail-label">Exercises:</span>
-                            <span class="detail-value">Tabletop simulations, response drills, playbook validation in production conditions</span>
-                        </div>
-                        <div class="detail-item">
-                            <span class="detail-label">Outcome:</span>
-                            <span class="detail-value">Your team handles incidents independently. 2-hour response SLA achieved.</span>
-                        </div>
-                    </div>
-                    <div class="card-glow"></div>
-                </article>
-                <article class="sec-service-card" style="--card-index: 5;">
-                    <div class="card-accent"></div>
-                    <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M12 6v6l4.28 2.55"/>
-                    </svg>
-                    <h3>Security Assessments</h3>
-                    <p class="card-intro">Practical, high-impact audits. We prioritize what matters for your risk profile, not checkbox compliance.</p>
-                    <div class="card-details">
-                        <div class="detail-item">
-                            <span class="detail-label">Scope:</span>
-                            <span class="detail-value">Infrastructure, identity, applications, data handling, vendor risk, compliance</span>
-                        </div>
-                        <div class="detail-item">
-                            <span class="detail-label">Deliverables:</span>
-                            <span class="detail-value">Risk-ranked findings, remediation roadmap, POC fixes, architecture review</span>
-                        </div>
-                        <div class="detail-item">
-                            <span class="detail-label">Value:</span>
-                            <span class="detail-value">Fix high-risk issues in 30 days. Clear before/after metrics and proof.</span>
-                        </div>
-                    </div>
-                    <div class="card-glow"></div>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- How We Work -->
-    <section id="process" class="sec-process" aria-label="How we work">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Process</span>
-                <h2 class="section-heading">Clear phases. Measurable outcomes.</h2>
-            </div>
-
-            <div class="process-grid">
-                <div class="process-step" style="--step-index: 0;">
-                    <div class="step-badge">1</div>
-                    <h4>Discovery</h4>
-                    <p>Map your environment, identify critical assets, and clarify detection priorities.</p>
-                    <div class="step-connector"></div>
-                </div>
-                <div class="process-step" style="--step-index: 1;">
-                    <div class="step-badge">2</div>
-                    <h4>Design</h4>
-                    <p>Architecture and operational design with rollback plans built in.</p>
-                    <div class="step-connector"></div>
-                </div>
-                <div class="process-step" style="--step-index: 2;">
-                    <div class="step-badge">3</div>
-                    <h4>Implementation</h4>
-                    <p>Phased rollout, pilot validation, and infrastructure-as-code where possible.</p>
-                    <div class="step-connector"></div>
-                </div>
-                <div class="process-step" style="--step-index: 3;">
-                    <div class="step-badge">4</div>
-                    <h4>Validation</h4>
-                    <p>Detection tuning, tabletop exercises, and runbook validation in production-like conditions.</p>
-                    <div class="step-connector"></div>
-                </div>
-                <div class="process-step" style="--step-index: 4;">
-                    <div class="step-badge">5</div>
-                    <h4>Handoff</h4>
-                    <p>Your team owns it. Weekly tuning and advisory support for long-term resilience.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Trust -->
-    <section id="trust" class="sec-trust" aria-label="Trust">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Trust</span>
-                <h2 class="section-heading">Confidential, documented, and accountable</h2>
-            </div>
-
-            <div class="trust-grid">
-                <div>
-                    <h4>Confidentiality</h4>
-                    <p>We treat your architecture, findings, and access with strict confidence. NDAs available.</p>
-                </div>
-                <div>
-                    <h4>Documentation</h4>
-                    <p>Runbooks, diagrams, and decision records delivered as part of every engagement.</p>
-                </div>
-                <div>
-                    <h4>Partnership</h4>
-                    <p>Focused on knowledge transfer so your team can own security operations day-to-day.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section id="testimonials" class="sec-testimonials" aria-label="Client testimonials">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Success Stories</span>
-                <h2 class="section-heading">Trusted by startups and MSPs</h2>
-            </div>
-
-            <div class="testimonials-grid">
-                <article class="testimonial-card" style="--testimonial-index: 0;">
-                    <div class="testimonial-accent"></div>
-                    <div class="testimonial-header">
-                        <div class="testimonial-avatar">V</div>
-                        <div class="testimonial-meta">
-                            <h4>Victor</h4>
-                            <p>Engineering Lead, India</p>
-                        </div>
-                    </div>
-                    <div class="testimonial-quote">
-                        <p>"Needed Wazuh deployment done right. Clear scope, realistic timeline, and hands-on knowledge transfer. My team is confident running it solo now."</p>
-                    </div>
-                    <div class="testimonial-context">
-                        <span class="context-tag">Wazuh SIEM Setup</span>
-                        <span class="context-tag">Knowledge Transfer</span>
-                    </div>
-                    <div class="testimonial-glow"></div>
-                </article>
-
-                <article class="testimonial-card" style="--testimonial-index: 1;">
-                    <div class="testimonial-accent"></div>
-                    <div class="testimonial-header">
-                        <div class="testimonial-avatar">B</div>
-                        <div class="testimonial-meta">
-                            <h4>Brian Brown</h4>
-                            <p>MSP Director, USA</p>
-                        </div>
-                    </div>
-                    <div class="testimonial-quote">
-                        <p>"Phased Huntress + Defender migration for 350+ endpoints across 5 customers. Structured approach, playbooks included. Exactly what an MSP needs to scale securely."</p>
-                    </div>
-                    <div class="testimonial-context">
-                        <span class="context-tag">EDR/ITDR/SIEM Stack</span>
-                        <span class="context-tag">MSP Architecture</span>
-                    </div>
-                    <div class="testimonial-glow"></div>
-                </article>
-
-                <article class="testimonial-card" style="--testimonial-index: 2;">
-                    <div class="testimonial-accent"></div>
-                    <div class="testimonial-header">
-                        <div class="testimonial-avatar">Z</div>
-                        <div class="testimonial-meta">
-                            <h4>Zachary Moore</h4>
-                            <p>Patriot Consulting Technology Group | MXDR365</p>
-                        </div>
-                    </div>
-                    <div class="testimonial-quote">
-                        <p>"Operating in a 24x7 managed security operations environment, performing end-to-end alert triage and incident investigation across Microsoft Sentinel and Microsoft Defender XDR. Strong focus on identity threats, cloud attack paths, and account compromise scenarios. Analyzing authentication anomalies, validating true positives vs false positives, and making evidence-based response decisions. This role sharpened experience in live SOC operations, cloud identity threat detection, and fast decision-making in high-visibility environments."</p>
-                    </div>
-                    <div class="testimonial-context">
-                        <span class="context-tag">MSSP</span>
-                        <span class="context-tag">24x7 SOC Operations</span>
-                        <span class="context-tag">Identity Threat Detection</span>
-                        <span class="context-tag">Microsoft Sentinel & Defender XDR</span>
-                    </div>
-                    <div class="testimonial-glow"></div>
-                </article>
-
-                <article class="testimonial-card" style="--testimonial-index: 3;">
-                    <div class="testimonial-accent"></div>
-                    <div class="testimonial-header">
-                        <div class="testimonial-avatar">A</div>
-                        <div class="testimonial-meta">
-                            <h4>Adedayo Adegbola</h4>
-                            <p>Security Engineer (ELK SIEM Environment)</p>
-                        </div>
-                    </div>
-                    <div class="testimonial-quote">
-                        <p>"Lakshan provided hands-on support with our ELK SIEM environment, helping build and refine detection rules based on our firewall logs. He quickly understood our log structure and worked through challenges like scoping detections to specific environments (ODC) using available fields. His approach was practical and focused on making detections usable in a real SOC workflow. The collaboration has been helpful in improving our visibility and detection coverage."</p>
-                    </div>
-                    <div class="testimonial-context">
-                        <span class="context-tag">ELK SIEM</span>
-                        <span class="context-tag">Detection Engineering</span>
-                        <span class="context-tag">Fortinet Logs</span>
-                        <span class="context-tag">SOC Operations</span>
-                    </div>
-                    <div class="testimonial-glow"></div>
-                </article>
-
-                <article class="testimonial-card" style="--testimonial-index: 4;">
-                    <div class="testimonial-accent"></div>
-                    <div class="testimonial-header">
-                        <div class="testimonial-avatar">R</div>
-                        <div class="testimonial-meta">
-                            <h4>Abdurrrahman</h4>
-                            <p>POS Systems Lead</p>
-                        </div>
-                    </div>
-                    <div class="testimonial-quote">
-                        <p>"Lakshan did it great — the POS integration was fast, stable, and the checkout workflows were tailored for our retail operations. We now have real-time insights into sales and inventory, and the system handles peak hours smoothly."</p>
-                    </div>
-                    <div class="testimonial-context">
-                        <span class="context-tag">POS System</span>
-                        <span class="context-tag">In-store Retail</span>
-                        <span class="context-tag">Integration</span>
-                        <span class="context-tag">Performance</span>
-                    </div>
-                    <div class="testimonial-glow"></div>
-                </article>
-
-                <article class="testimonial-card" style="--testimonial-index: 5;">
-                    <div class="testimonial-accent"></div>
-                    <div class="testimonial-header">
-                        <div class="testimonial-avatar">+</div>
-                        <div class="testimonial-meta">
-                            <h4>Your story</h4>
-                            <p>Let's build it together</p>
-                        </div>
-                    </div>
-                    <div class="testimonial-quote">
-                        <p>"Ready to implement a security stack that actually works for your team? Let's start with a discovery call and see what's possible."</p>
-                    </div>
-                    <div class="testimonial-context">
-                        <span class="context-tag">Discovery</span>
-                        <span class="context-tag">Planning</span>
-                    </div>
-                    <div class="testimonial-glow"></div>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="sec-cta" aria-label="Call to action">
-        <div class="container">
-            <div class="home-cta-card">
-                <div class="home-cta-copy">
-                    <h2 class="home-cta-title">Need clarity before committing to tooling?</h2>
-                    <p class="home-cta-text">Let's talk through your environment and scope the simplest path forward.</p>
-                </div>
-                <div class="home-cta-actions">
-                    <a class="btn btn-primary" href="contact.html#demo">Start a conversation</a>
-                    <a class="btn btn-outline" href="contact.html">Contact</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-top">
-                <div class="footer-brand">
-                    <img src="Logo.png" alt="OpenForge" class="footer-logo">
-                    <p>Reliable systems, clean websites, secure foundations.</p>
-                    <div class="footer-ctas" aria-label="Contact links">
-                        <a class="footer-pill" href="https://wa.me/94778177435" target="_blank" rel="noopener">WhatsApp</a>
-                        <a class="footer-pill" href="mailto:contact@getopenforge.net?subject=OpenForge%20Demo%20Request">Email</a>
-                    </div>
-                </div>
-
-                <div class="footer-columns" aria-label="Footer navigation">
-                    <div class="footer-col">
-                        <div class="footer-col-title">Explore</div>
-                        <div class="footer-col-links">
-                            <a href="pos.html">POS</a>
-                            <a href="web.html">Web</a>
-                            <a href="security.html">Cybersecurity</a>
-                        </div>
-                    </div>
-
-                    <div class="footer-col">
-                        <div class="footer-col-title">Pricing</div>
-                        <div class="footer-col-links">
-                            <a href="pos.html#pricing">POS Pricing</a>
-                            <a href="web.html#web-pricing">Website Pricing</a>
-                        </div>
-                    </div>
-
-                    <div class="footer-col">
-                        <div class="footer-col-title">Contact</div>
-                        <div class="footer-col-links">
-                            <a href="contact.html">Request a Demo</a>
-                            <a href="https://wa.me/94778177435" target="_blank" rel="noopener">+94 77 81 77 435</a>
-                            <a href="mailto:contact@getopenforge.net?subject=OpenForge%20Demo%20Request">contact@getopenforge.net</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 OpenForge. All rights reserved.</p>
-            </div>
+            <div class="footer-bottom"><span>&copy; 2026 OpenForge. All rights reserved.</span><span>Privacy note: findings are handled confidentially.</span></div>
         </div>
     </footer>
-
-    <script src="script.js"></script>
+    <script src="script.js?v=premium-wow-51"></script>
+    <script type="module" src="openforge-scene.js?v=premium-wow-51"></script>
 </body>
 </html>

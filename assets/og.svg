@@ -1,16 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
   <defs>
     <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#8b5cf6" stop-opacity="0.9"/>
+      <stop offset="0" stop-color="#ff302b" stop-opacity="0.9"/>
       <stop offset="0.55" stop-color="#0b0b0f" stop-opacity="1"/>
-      <stop offset="1" stop-color="#f43f5e" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#7a0505" stop-opacity="0.85"/>
     </linearGradient>
     <radialGradient id="r" cx="30%" cy="25%" r="70%">
-      <stop offset="0" stop-color="#8b5cf6" stop-opacity="0.28"/>
+      <stop offset="0" stop-color="#ff302b" stop-opacity="0.24"/>
       <stop offset="0.6" stop-color="#000" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="r2" cx="75%" cy="70%" r="70%">
-      <stop offset="0" stop-color="#f43f5e" stop-opacity="0.22"/>
+      <stop offset="0" stop-color="#ff302b" stop-opacity="0.18"/>
       <stop offset="0.65" stop-color="#000" stop-opacity="0"/>
     </radialGradient>
     <filter id="blur" x="-20%" y="-20%" width="140%" height="140%">
@@ -33,8 +33,8 @@
       OpenForge
     </text>
     <text x="90" y="360" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif" font-size="34" font-weight="600" fill="#94a3b8">
-      Reliable POS systems. Cybersecurity coming next.
+      Cyber readiness for serious teams.
     </text>
-    <rect x="90" y="395" width="520" height="2" fill="#8b5cf6" opacity="0.85"/>
+    <rect x="90" y="395" width="520" height="2" fill="#ff302b" opacity="0.9"/>
   </g>
 </svg>

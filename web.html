@@ -3,425 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="OpenForge Web Development — modern websites that load fast, look premium, and convert.">
+    <meta name="description" content="Secure, clean, maintainable websites for small businesses from OpenForge. Business websites, landing pages, service pages, performance, and security basics.">
     <meta property="og:title" content="OpenForge Web Development">
-    <meta property="og:description" content="Fast, premium websites and upgrades for modern businesses.">
+    <meta property="og:description" content="Secure, clean, maintainable websites for small businesses.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="assets/og.svg">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="OpenForge Web Development">
-    <meta name="twitter:description" content="Fast, premium websites and upgrades for modern businesses.">
+    <meta name="twitter:description" content="Secure, clean, maintainable websites for small businesses.">
     <meta name="twitter:image" content="assets/og.svg">
-
-    <link rel="icon" type="image/png" href="Logo.png">
-    <link rel="apple-touch-icon" href="Logo.png">
-
-    <!-- Google Analytics (replace G-XXXXXXXXXX with your Measurement ID) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);} 
-        gtag('js', new Date());
-        gtag('config', 'G-XXXXXXXXXX');
-    </script>
-
-    <title>OpenForge Web Development</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="assets/openforge-logo.svg?v=premium-wow-51">
+    <link rel="apple-touch-icon" href="assets/openforge-logo.svg?v=premium-wow-51">
+    <title>Web Development - OpenForge</title>
+    <link rel="stylesheet" href="premium.css?v=premium-wow-51">
 </head>
-<body>
-    <!-- Navigation -->
-    <header class="header">
-        <nav class="nav">
-            <div class="nav-container">
-                <a href="index.html" class="logo">
-                    <img src="Logo.png" alt="OpenForge">
-                </a>
-                <button class="nav-toggle" id="navToggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <ul class="nav-links" id="navLinks">
-                    <li><a href="pos.html">POS</a></li>
-                    <li><a href="web.html">Web</a></li>
-                    <li><a href="security.html">Cybersecurity</a></li>
-                    <li><a href="customers.html">Customers</a></li>
-                    <li><a href="contact.html" class="nav-cta">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+<body data-page="web">
+    <header class="site-header"><nav class="nav" aria-label="Primary navigation"><a class="brand" href="index.html" aria-label="OpenForge home"><img src="assets/openforge-logo-reverse.svg?v=premium-wow-51" alt="OpenForge"><span class="brand-name">OpenForge</span></a><button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-nav-toggle><span></span><span></span><span></span></button><ul class="nav-links" data-nav-links><li><a href="index.html" data-nav="home">Home</a></li><li><a href="security.html" data-nav="security">Security</a></li><li><a href="monthly-care.html" data-nav="care">Monthly Care</a></li><li><a href="work.html" data-nav="work">Work</a></li><li><a href="web.html" data-nav="web">Web</a></li><li><a href="pos.html" data-nav="pos">POS</a></li><li><a href="customers.html" data-nav="proof">Reviews</a></li><li><a href="contact.html" data-nav="contact">Contact</a></li><li><a class="nav-cta" href="contact.html">Request Review</a></li></ul></nav></header>
 
-    <!-- Hero -->
-    <section class="hero">
-        <div class="hero-bg"></div>
-        <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="assets/screenshots/web-launch.svg" aria-hidden="true">
-            <source src="assets/hero.mp4?v=20251225-premium" type="video/mp4">
-        </video>
-        <div class="container">
-            <div class="hero-grid">
-                <div class="hero-content">
-                    <img class="hero-logo" src="Logo.png" alt="OpenForge" decoding="async" fetchpriority="high">
-                    <div class="hero-pills" aria-label="Page">
-                        <span class="hero-pill">Web Development</span>
-                        <span class="hero-pill">Fast</span>
-                        <span class="hero-pill">Premium</span>
-                    </div>
-                    <h1 class="hero-heading">
-                        <span class="hero-line hero-line-1">A modern website.</span>
-                        <span class="hero-line hero-line-2">That feels trustworthy.</span>
-                        <span class="hero-line hero-line-3">And converts visitors.</span>
-                    </h1>
-                    <p class="hero-text">For businesses that need a clean launch or an upgrade that loads fast and looks premium.</p>
-                    <ul class="hero-highlights" aria-label="Key highlights">
-                        <li>Mobile-first design</li>
-                        <li>SEO fundamentals</li>
-                        <li>Conversion-focused structure</li>
-                    </ul>
-                    <div class="hero-actions">
-                        <a href="contact.html" class="btn btn-primary">Request quote</a>
-                        <a href="#web-pricing" class="btn btn-outline">View pricing</a>
+    <main class="premium-main">
+        <section class="premium-hero split-hero web-hero">
+            <div class="container hero-split-grid">
+                <div class="hero-copy">
+                    <span class="eyebrow">Premium web build</span>
+                    <h1 class="page-title">A website that feels expensive because it works cleanly.</h1>
+                    <p class="lead">OpenForge builds service pages, launch pages, and business websites with sharp UX, responsive polish, performance discipline, and security-aware handoff.</p>
+                    <div class="hero-actions"><a class="button web-primary-action" href="contact.html">Plan a website</a><a class="button secondary" href="#demo-videos">Watch demos</a></div>
+                    <div class="web-hero-metrics" aria-label="Website delivery highlights">
+                        <span><strong>UX</strong> clear journeys</span>
+                        <span><strong>QA</strong> mobile tested</span>
+                        <span><strong>Launch</strong> DNS and forms</span>
                     </div>
                 </div>
-
-                <div class="hero-media" aria-hidden="true">
-                    <div class="hero-showcase">
-                        <div class="showcase-surface">
-                            <div class="showcase-main">
-                                <div class="showcase-badge-row">Web Development</div>
-                                <div class="showcase-frame">
-                                    <img src="assets/screenshots/web-launch.svg" alt="" loading="lazy" decoding="async">
-                                </div>
-                            </div>
-                            <div class="showcase-strip">
-                                <div class="showcase-mini">
-                                    <div class="showcase-mini-badge">Upgrade</div>
-                                    <img src="assets/screenshots/web-upgrade.svg" alt="" loading="lazy" decoding="async">
-                                </div>
-                                <div class="showcase-mini">
-                                    <div class="showcase-mini-badge">Speed</div>
-                                    <img src="assets/screenshots/stock.svg" alt="" loading="lazy" decoding="async">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="showcase-kpis">
-                            <div class="showcase-kpi"><strong>Mobile-first</strong><span>Looks sharp everywhere.</span></div>
-                            <div class="showcase-kpi"><strong>Fast load</strong><span>Reduce bounce, improve trust.</span></div>
-                            <div class="showcase-kpi"><strong>Clear offer</strong><span>Built for conversion.</span></div>
-                        </div>
+                <div class="web-demo-stage" aria-label="Website demo preview">
+                    <div class="web-browser">
+                        <div class="browser-chrome"><span class="browser-dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="browser-url">getopenforge.net / premium-launch</span><span class="browser-status">Live preview</span></div>
+                        <video class="web-demo-video" autoplay muted loop playsinline preload="metadata" poster="assets/screenshots/demo-2.jpg"><source src="assets/demo-2-web.mp4" type="video/mp4"></video>
+                        <div class="web-demo-status"><span>Launch readiness</span><strong>96%</strong><div class="health-line mini-health" aria-hidden="true"><svg viewBox="0 0 220 46" focusable="false"><path d="M0 24 H42 L55 24 L66 8 L82 38 L100 21 L119 25 H146 L158 15 L173 33 L188 24 H220"></path></svg></div></div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Web Development -->
-    <section id="web" class="security-section web-section" aria-label="Web development">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Web Development</span>
-                <h2 class="section-heading">A modern website that feels trustworthy</h2>
-                <p class="section-text">For businesses that don’t have a website yet—or need an upgrade that loads fast, looks premium, and converts.</p>
-            </div>
-
-            <div class="security-split" role="list">
-                <article class="security-panel web-panel" role="listitem">
-                    <div class="security-kicker">New site</div>
-                    <div class="service-preview product-window" aria-hidden="true">
-                        <div class="window-header">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                        <img src="assets/screenshots/web-launch.svg" alt="Website launch preview" loading="lazy" decoding="async">
-                    </div>
-                    <h3 class="security-title">Launch your first website</h3>
-                    <p class="security-lead">A clean, mobile-first site that’s easy for customers to understand and easy for you to maintain.</p>
-                    <ul class="security-list">
-                        <li><strong>Mobile-first design</strong> that looks sharp on any device</li>
-                        <li><strong>Core pages</strong> (Home, About, Services, Contact) built for clarity</li>
-                        <li><strong>Lead capture</strong> with contact form + email integration</li>
-                        <li><strong>SEO fundamentals</strong> (titles, descriptions, structure)</li>
-                    </ul>
-                </article>
-
-                <article class="security-panel web-panel" role="listitem">
-                    <div class="security-kicker">Upgrade</div>
-                    <div class="service-preview product-window" aria-hidden="true">
-                        <div class="window-header">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                        <img src="assets/screenshots/web-upgrade.svg" alt="Website upgrade preview" loading="lazy" decoding="async">
-                    </div>
-                    <h3 class="security-title">Redesign / performance upgrade</h3>
-                    <p class="security-lead">Modernize an outdated site with better UX, faster load times, and a stronger brand impression.</p>
-                    <ul class="security-list">
-                        <li><strong>UI refresh</strong> to match a premium, modern feel</li>
-                        <li><strong>Speed improvements</strong> to reduce bounce and improve experience</li>
-                        <li><strong>Content cleanup</strong> so your offer is instantly clear</li>
-                        <li><strong>Deployment help</strong> (domain, hosting, SSL) if needed</li>
-                    </ul>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- Samples / Our Work -->
-    <section id="web-samples" class="gallery-section" aria-label="Samples and our work">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Samples</span>
-                <h2 class="section-heading">See our work before you commit</h2>
-                <p class="section-text">When we reach out, we often say: “I’d love to show you a free preview of what your business could look like online.” Here are a few samples—then we can tailor a preview to your brand.</p>
-            </div>
-
-            <div class="gallery-card">
-                <div class="demo-preview" aria-label="Preview">
-                    <div class="demo-preview-bar">
-                        <div class="demo-preview-badge" title="Samples and previews. Final design is customised.">
-                            Preview
-                        </div>
-                        <div class="demo-preview-hint">Samples and previews. Final design is customised.</div>
-                    </div>
-                    <div class="demo-preview-stage">
-                        <img src="assets/screenshots/web-launch.svg" alt="Website sample preview" loading="lazy" decoding="async">
-                        <div class="demo-preview-ui" aria-hidden="true">
-                            <div class="demo-ui-top">
-                                <div class="demo-ui-pill">Mobile-first</div>
-                                <div class="demo-ui-pill">Fast</div>
-                                <div class="demo-ui-pill">Clean UI</div>
-                                <button class="demo-ui-btn" type="button" disabled>Preview</button>
-                            </div>
-                            <div class="demo-ui-float" title="Samples and previews. Final design is customised.">
-                                Preview only
-                            </div>
-                        </div>
-                    </div>
+        <section class="section white" id="demo-videos">
+            <div class="container">
+                <div class="section-head">
+                    <span class="kicker">Demo videos</span>
+                    <h2 class="section-title">Real movement. Real pages. No empty showroom blocks.</h2>
+                    <p class="section-copy">These demos are placed as first-class product surfaces so visitors can understand the pace, polish, and practical detail of the work.</p>
                 </div>
-
-                <div class="gallery-tabs" role="tablist" aria-label="Website samples tabs">
-                    <button class="gallery-tab is-active" type="button" role="tab" aria-selected="true" data-gallery-tab="launch" data-src="assets/screenshots/web-launch.svg">Launch</button>
-                    <button class="gallery-tab" type="button" role="tab" aria-selected="false" data-gallery-tab="upgrade" data-src="assets/screenshots/web-upgrade.svg">Upgrade</button>
-                    <button class="gallery-tab" type="button" role="tab" aria-selected="false" data-gallery-tab="concept" data-src="assets/screenshots/stock.svg">Concept</button>
-                </div>
-
-                <div class="gallery-stage" aria-live="polite">
-                    <img class="gallery-image" src="assets/screenshots/web-launch.svg" alt="OpenForge screenshot: Launch" loading="lazy" decoding="async">
+                <div class="demo-grid">
+                    <article class="demo-card featured-demo">
+                        <div class="demo-media"><video controls muted playsinline preload="metadata" poster="assets/screenshots/demo-2.jpg"><source src="assets/demo-2-web.mp4" type="video/mp4"></video></div>
+                        <div class="demo-meta"><span>Featured flow</span><h3>Premium launch page</h3><p>Hero, offer, proof, and conversion path framed like a real business experience.</p></div>
+                    </article>
+                    <article class="demo-card">
+                        <div class="demo-media"><video controls muted playsinline preload="metadata" poster="assets/screenshots/demo-1.jpg"><source src="assets/demo-1-web.mp4" type="video/mp4"></video></div>
+                        <div class="demo-meta"><span>Responsive detail</span><h3>Mobile-first interaction</h3><p>Readable sections, controlled spacing, and touch-friendly action points.</p></div>
+                    </article>
+                    <article class="demo-card">
+                        <div class="demo-media"><video controls muted playsinline preload="metadata" poster="assets/screenshots/demo-3.jpg"><source src="assets/demo-3-web.mp4" type="video/mp4"></video></div>
+                        <div class="demo-meta"><span>Operational polish</span><h3>Service and admin surfaces</h3><p>Practical UI patterns for businesses that need clear information, not clutter.</p></div>
+                    </article>
                 </div>
             </div>
+        </section>
 
-            <div class="gallery-card demo-mockups-card" style="margin-top: var(--space-xl);">
-                <div class="demo-preview" aria-label="POS demos">
-                    <div class="demo-preview-bar">
-                        <div class="demo-preview-badge" title="Real recordings. No autoplay.">POS Demos</div>
-                        <div class="demo-preview-hint">Mobile + laptop recordings (click play).</div>
-                    </div>
+        <section class="section trusted-reviews-section">
+            <div class="container">
+                <div class="section-head">
+                    <span class="kicker">Customer proof</span>
+                    <h2 class="section-title">Trusted by operators, MSPs, and engineering teams.</h2>
+                    <p class="section-copy">The web work sits inside a wider delivery standard: clean handoff, practical systems thinking, and security-aware execution.</p>
                 </div>
+                <div class="testimonial-grid full">
+                    <article class="testimonial-card">
+                        <div class="testimonial-person"><span>V</span><div><strong>Victor</strong><p>Engineering Lead, India</p></div></div>
+                        <blockquote>"Needed Wazuh deployment done right. Clear scope, realistic timeline, and hands-on knowledge transfer. My team is confident running it solo now."</blockquote>
+                        <div class="testimonial-tags"><span>Wazuh SIEM setup</span><span>Knowledge transfer</span></div>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="testimonial-person"><span>B</span><div><strong>Brian Brown</strong><p>MSP Director, USA</p></div></div>
+                        <blockquote>"Phased Huntress + Defender migration for 350+ endpoints across 5 customers. Structured approach, playbooks included. Exactly what an MSP needs to scale securely."</blockquote>
+                        <div class="testimonial-tags"><span>EDR/ITDR/SIEM stack</span><span>MSP architecture</span></div>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="testimonial-person"><span>Z</span><div><strong>Zachary Moore</strong><p>Patriot Consulting Technology Group | MXDR365</p></div></div>
+                        <blockquote>"Operating in a 24x7 managed security operations environment ... live SOC operations, cloud identity threat detection, and fast decision-making in high-visibility environments."</blockquote>
+                        <div class="testimonial-tags"><span>MSSP</span><span>24x7 SOC operations</span><span>Identity threat detection</span><span>Microsoft Sentinel &amp; Defender XDR</span></div>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="testimonial-person"><span>A</span><div><strong>Adedayo Adegbola</strong><p>Security Engineer (ELK SIEM Environment)</p></div></div>
+                        <blockquote>"Lakshan provided hands-on support with our ELK SIEM environment... improving our visibility and detection coverage."</blockquote>
+                        <div class="testimonial-tags"><span>ELK SIEM</span><span>Detection engineering</span><span>Fortinet logs</span><span>SOC operations</span></div>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="testimonial-person"><span>R</span><div><strong>Abdurrahman</strong><p>POS Systems Lead</p></div></div>
+                        <blockquote>"Lakshan did it great &mdash; the POS integration was fast, stable, and the checkout workflows were tailored for our retail operations. We now have real-time insights into sales and inventory, and the system handles peak hours smoothly."</blockquote>
+                        <div class="testimonial-tags"><span>POS system</span><span>In-store retail</span><span>Integration</span><span>Performance</span></div>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-                <div class="demo-mockups-grid" aria-label="POS demo videos">
-                    <div class="demo-mockup-item is-mobile" aria-label="Demo 1 mobile recording">
-                        <div class="demo-mockup-label">Demo 1 — Mobile</div>
-                        <div class="phone-mockup">
-                            <div class="phone-frame">
-                                <div class="phone-screen">
-                                    <div class="device-screen-inner">
-                                        <video controls playsinline preload="metadata" poster="assets/screenshots/demo-1.jpg">
-                                            <source src="assets/demo-1.mp4" type="video/mp4">
-                                        </video>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="showcase-kpis demo-kpis" aria-label="Demo 1 highlights">
-                            <div class="showcase-kpi"><strong>Mobile-first</strong><span>Designed to feel native on phones.</span></div>
-                            <div class="showcase-kpi"><strong>Fast UI</strong><span>Snappy screens and clean navigation.</span></div>
-                            <div class="showcase-kpi"><strong>Real demo</strong><span>Recorded workflow, no mock clicks.</span></div>
-                        </div>
+        <section class="section web-proof-section">
+            <div class="container">
+                <div class="web-proof-band">
+                    <div>
+                        <span class="kicker">Build system</span>
+                        <h2>Premium is the whole handoff, not just the first screen.</h2>
+                        <p>Every page is shaped around the offer, the proof, the contact path, the mobile experience, and the launch details that keep the website reliable after it goes live.</p>
                     </div>
-
-                    <div class="demo-mockup-item is-laptop" aria-label="Demo 2 laptop recording">
-                        <div class="demo-mockup-label">Demo 2 — Laptop</div>
-                        <div class="laptop-mockup">
-                            <div class="laptop-screen">
-                                <div class="device-screen-inner">
-                                    <video controls playsinline preload="metadata" poster="assets/screenshots/demo-2.jpg">
-                                        <source src="assets/demo-2.mp4" type="video/mp4">
-                                    </video>
-                                </div>
-                            </div>
-                            <div class="laptop-base"></div>
-                        </div>
-                    </div>
-
-                    <div class="demo-mockup-item is-laptop" aria-label="Demo 3 laptop recording">
-                        <div class="demo-mockup-label">Demo 3 — Laptop</div>
-                        <div class="laptop-mockup">
-                            <div class="laptop-screen">
-                                <div class="device-screen-inner">
-                                    <video controls playsinline preload="metadata" poster="assets/screenshots/demo-3.jpg">
-                                        <source src="assets/demo-3.mp4" type="video/mp4">
-                                    </video>
-                                </div>
-                            </div>
-                            <div class="laptop-base"></div>
-                        </div>
+                    <div class="web-checklist">
+                        <div><span>01</span><strong>Information architecture</strong><p>Page hierarchy, CTA placement, and service messaging are mapped before visual polish.</p></div>
+                        <div><span>02</span><strong>Responsive QA</strong><p>Desktop, tablet, and mobile spacing are reviewed so text and media do not collide.</p></div>
+                        <div><span>03</span><strong>Launch hygiene</strong><p>Forms, DNS notes, analytics handoff, owner access, backups, and SSL basics are checked.</p></div>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <div class="hero-actions" style="margin-top: var(--space-lg);">
-                <a href="contact.html#demo" class="btn btn-primary">Request a free preview</a>
-                <a href="https://getopenforge.net" class="btn btn-outline" target="_blank" rel="noopener">See more at getopenforge.net</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Web Development Pricing -->
-    <section id="web-pricing" class="pricing-section" aria-label="Web development pricing">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Web pricing</span>
-                <h2 class="section-heading">Web development pricing</h2>
-                <p class="section-text">Clean builds for new sites and upgrades. Final quote depends on scope and content.</p>
-            </div>
-
-            <div class="pricing-table" role="list" aria-label="Web development pricing tiers">
-                <article class="tier-card" role="listitem" aria-label="Web starter tier">
-                    <header class="tier-header">
-                        <h3 class="tier-name">Starter Website</h3>
-                        <p class="tier-tagline">For new businesses that need a professional online presence</p>
-                    </header>
-                    <div class="tier-price">
-                        <div class="tier-amount">LKR 45,000 – 85,000</div>
-                        <div class="tier-label">One-time build</div>
-                    </div>
-                    <div class="tier-block">
-                        <h4 class="tier-block-title">Includes</h4>
-                        <ul class="tier-list">
-                            <li>Mobile-first landing page</li>
-                            <li>Services + contact section</li>
-                            <li>Basic SEO setup</li>
-                            <li>Fast load + clean UI</li>
-                            <li>Deployment support (domain/hosting)</li>
-                        </ul>
-                    </div>
-                    <div class="tier-best">
-                        <h4 class="tier-block-title">Best for</h4>
-                        <p>Shops, clinics, local services, small teams</p>
-                    </div>
-                    <a class="btn btn-outline tier-cta" href="contact.html#demo">Request quote</a>
-                </article>
-
-                <article class="tier-card tier-featured" role="listitem" aria-label="Web business tier">
-                    <header class="tier-header">
-                        <div class="tier-badge" aria-label="Most chosen">Most chosen</div>
-                        <h3 class="tier-name">Business Website</h3>
-                        <p class="tier-tagline">For companies that want trust, clarity, and conversion</p>
-                    </header>
-                    <div class="tier-price">
-                        <div class="tier-amount">LKR 90,000 – 160,000</div>
-                        <div class="tier-label">One-time build</div>
-                    </div>
-                    <div class="tier-block">
-                        <h4 class="tier-block-title">Includes everything in Starter, plus</h4>
-                        <ul class="tier-list">
-                            <li>Multi-page site (About, Services, Contact)</li>
-                            <li>Stronger copy structure (offer clarity)</li>
-                            <li>Performance pass (images + loading)</li>
-                            <li>Lead capture form + email routing</li>
-                            <li>Basic analytics setup</li>
-                        </ul>
-                    </div>
-                    <div class="tier-best">
-                        <h4 class="tier-block-title">Best for</h4>
-                        <p>SMEs, established brands, teams upgrading old sites</p>
-                    </div>
-                    <a class="btn btn-primary tier-cta" href="contact.html#demo">Request quote</a>
-                </article>
-
-                <article class="tier-card" role="listitem" aria-label="Web custom tier">
-                    <header class="tier-header">
-                        <h3 class="tier-name">Custom / Web App</h3>
-                        <p class="tier-tagline">For booking flows, dashboards, portals, or integrations</p>
-                    </header>
-                    <div class="tier-price">
-                        <div class="tier-amount">Custom quote</div>
-                        <div class="tier-label">Scoped build</div>
-                    </div>
-                    <div class="tier-block">
-                        <h4 class="tier-block-title">Includes</h4>
-                        <ul class="tier-list">
-                            <li>Custom pages + components</li>
-                            <li>Auth / admin (if required)</li>
-                            <li>Integrations (email, payments, APIs)</li>
-                            <li>Deployment + maintenance plan</li>
-                            <li>Security basics from day one</li>
-                        </ul>
-                    </div>
-                    <div class="tier-best">
-                        <h4 class="tier-block-title">Best for</h4>
-                        <p>Businesses building a workflow, not just a brochure site</p>
-                    </div>
-                    <a class="btn btn-outline tier-cta" href="contact.html#demo">Talk to us</a>
-                </article>
-            </div>
-
-            <p class="pricing-disclaimer">We’ll recommend the simplest option that fits your goal. No upsell pressure.</p>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-top">
-                <div class="footer-brand">
-                    <img src="Logo.png" alt="OpenForge" class="footer-logo">
-                    <p>Reliable systems, clean websites, secure foundations.</p>
-                    <div class="footer-ctas" aria-label="Contact links">
-                        <a class="footer-pill" href="https://wa.me/94778177435" target="_blank" rel="noopener">WhatsApp</a>
-                        <a class="footer-pill" href="mailto:contact@getopenforge.net?subject=OpenForge%20Demo%20Request">Email</a>
-                        <a class="footer-pill" href="https://www.upwork.com/freelancers/~01278f31a6af00dd21?mp_source=share" target="_blank" rel="noopener">Hire on Upwork</a>
-                    </div>
+        <section class="section dark">
+            <div class="container feature-row reverse">
+                <div class="launch-console" aria-label="Website launch checks">
+                    <div class="console-head"><span></span><strong>OpenForge launch review</strong><b>Ready</b></div>
+                    <div class="launch-row"><span>Performance</span><strong>Compressed media, clean layout, fast first read.</strong><b>Pass</b></div>
+                    <div class="launch-row"><span>Security</span><strong>HTTPS, forms, admin access, and recovery paths reviewed.</strong><b>Pass</b></div>
+                    <div class="launch-row"><span>UX</span><strong>Offer clarity, proof, contact path, and mobile navigation checked.</strong><b>Pass</b></div>
+                    <div class="launch-row"><span>Handoff</span><strong>Ownership notes and future maintenance path documented.</strong><b>Pass</b></div>
                 </div>
-
-                <div class="footer-columns" aria-label="Footer navigation">
-                    <div class="footer-col">
-                        <div class="footer-col-title">Explore</div>
-                        <div class="footer-col-links">
-                            <a href="pos.html">POS</a>
-                            <a href="web.html">Web</a>
-                            <a href="security.html">Cybersecurity</a>
-                        </div>
-                    </div>
-
-                    <div class="footer-col">
-                        <div class="footer-col-title">Pricing</div>
-                        <div class="footer-col-links">
-                            <a href="pos.html#pricing">POS Pricing</a>
-                            <a href="#web-pricing">Website Pricing</a>
-                        </div>
-                    </div>
-
-                    <div class="footer-col">
-                        <div class="footer-col-title">Contact</div>
-                        <div class="footer-col-links">
-                            <a href="contact.html">Request a Demo</a>
-                            <a href="https://wa.me/94778177435" target="_blank" rel="noopener">+94 77 81 77 435</a>
-                            <a href="mailto:contact@getopenforge.net?subject=OpenForge%20Demo%20Request">contact@getopenforge.net</a>
-                        </div>
-                    </div>
-                </div>
+                <div class="feature-copy"><span class="kicker">Website QA</span><h2>Designed to look calm, then survive launch day.</h2><p class="quiet">The page gets a final visual review, content pass, interaction check, and security-aware launch checklist before it is handed over.</p><div class="hero-actions"><a class="button" href="contact.html">Start a build</a><a class="button secondary" href="sample-report.html">View sample report</a></div></div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 OpenForge. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+        </section>
 
-    <script src="script.js"></script>
+        <section class="section white">
+            <div class="container web-service-strip">
+                <article><span>Strategy</span><strong>Offer and page plan</strong><p>Clear site structure before the build starts.</p></article>
+                <article><span>Design</span><strong>Premium visual system</strong><p>Matte, readable, modern layouts with strong hierarchy.</p></article>
+                <article><span>Build</span><strong>Responsive implementation</strong><p>Stable components, clean spacing, and practical performance.</p></article>
+                <article><span>Care</span><strong>Security-aware handoff</strong><p>Launch notes, access basics, and maintenance guidance.</p></article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer"><div class="container"><div class="footer-grid"><div class="footer-brand"><img src="assets/openforge-logo.svg?v=premium-wow-51" alt="OpenForge"><strong>OpenForge</strong><p>Website &amp; Email Security for Small Businesses.</p><div class="safety-note">Authorized checks only. Clear written scope, confidential handling, and NDA available if required.</div></div><div class="footer-col"><strong>Services</strong><a href="security.html">Security Health Check</a><a href="monthly-care.html">Monthly Security Care</a><a href="work.html">Work &amp; Demos</a><a href="web.html">Web Development</a><a href="pos.html">POS Systems</a></div><div class="footer-col"><strong>Reviews</strong><a href="customers.html">Customer Reviews</a><a href="sample-report.html">Sample Security Report</a><a href="contact.html">Contact</a></div><div class="footer-col"><strong>Contact</strong><a href="mailto:contact@getopenforge.net">contact@getopenforge.net</a><a href="https://wa.me/94778177435" target="_blank" rel="noopener">+94 77 81 77 435</a></div></div><div class="footer-bottom"><span>&copy; 2026 OpenForge. All rights reserved.</span><span>Privacy note: findings are handled confidentially.</span></div></div></footer>
+    <script src="script.js?v=premium-wow-51"></script>
 </body>
 </html>
