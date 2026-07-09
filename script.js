@@ -174,15 +174,14 @@ if (contactForm) {
     contactForm.addEventListener("input", updateWhatsappLink);
     contactForm.addEventListener("change", updateWhatsappLink);
 
-    contactForm.addEventListener("submit", (event) => {
-        event.preventDefault();
+    contactForm.addEventListener("submit", () => {
+        updateWhatsappLink();
 
-        if (!contactForm.reportValidity()) return;
+        const submitButton = contactForm.querySelector('button[type="submit"]');
+        if (!submitButton) return;
 
-        const subject = "OpenForge Security Review Request";
-        const body = buildContactMessage(contactForm);
-        const href = `mailto:contact@getopenforge.net?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-        window.location.href = href;
+        submitButton.disabled = true;
+        submitButton.textContent = "Sending request...";
     });
 
     updateWhatsappLink();
